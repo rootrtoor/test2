@@ -1,0 +1,1 @@
+// friends.js - JS for friends.html 

@@ -1,0 +1,1 @@
+// account-privacy.js - JS for account-privacy.html 

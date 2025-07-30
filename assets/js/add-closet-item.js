@@ -1,0 +1,1 @@
+// add-closet-item.js - JS for add-closet-item.html 
