@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/global.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex justify-between bg-gray-200 max-w-[1400px] mx-auto my-0 cc-body-container">
+  <div class="bg-white w-full flex flex-col items-center md:max-w-[1400px] max-w-[600px]">
+    <div class="max-w-[600px] bg-white w-full flex flex-col items-center justify-between pt-5 px-5 gap-8 pb-24">
+      <p class="font-medium text-xl">Search</p>
+
+      <div class="flex-1 flex flex-col gap-4 w-full">
+        <div class="relative w-full">
+          <input type="text" placeholder="AI Search"
+            class="w-full pl-10 pr-4 py-2 bg-[#0E0D0D1A] rounded-full focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-brand-red transition"
+            id="search" />
+          <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+            <img src="./../assets/icons/search.svg" alt="search">
+          </span>
+        </div>
+
+        <!-- ------------------ Tabs Section ------------------ -->
+        <div class="flex gap-1 overflow-x-auto">
+          <div class="rounded-full px-4 py-1 text-white cursor-pointer bg-brand-red tab-btn"
+            data-tab-target="#Products">
+            Products</div>
+          <div class="rounded-full px-4 py-1 bg-gray-100 cursor-pointer tab-btn" data-tab-target="#People">People</div>
+          <div class="rounded-full px-4 py-1 bg-gray-100 cursor-pointer tab-btn" data-tab-target="#Posts">Posts</div>
+          <div class="rounded-full px-4 py-1 bg-gray-100 cursor-pointer tab-btn" data-tab-target="#Popular">Popular
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2 tab-panel" id="Products">
+          <div>
+            <p>Filters</p>
+            <div class="grid grid-cols-3 gap-4">
+              <div class="rounded-full cursor-pointer bg-gray-100 px-4 py-1 flex items-center gap-2 justify-center">
+                <span>Closet</span>
+                <img src="./../assets/icons/arrow-bottom.svg" alt="arrow-bottom">
+              </div>
+              <div class="rounded-full cursor-pointer bg-gray-100 px-4 py-1 flex items-center gap-2 justify-center">
+                <span>Price</span>
+                <img src="./../assets/icons/arrow-bottom.svg" alt="arrow-bottom">
+              </div>
+              <div class="rounded-full cursor-pointer bg-gray-100 px-4 py-1 flex items-center gap-2 justify-center">
+                <span>Condition</span>
+                <img src="./../assets/icons/arrow-bottom.svg" alt="arrow-bottom">
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-x-2 gap-y-6">
+            <div class="grid gap-2 cursor-pointer clickable">
+              <a href="" target="_blank" class="flex items-center gap-2 pb-2">
+                <img class="size-12 rounded-full outline-2 outline-pink-400 outline-offset-2 object-cover"
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
+                  alt="Lisa Parker">
+                <div class="flex items-center gap-1">
+                  <span>@Lisaprkr</span>
+                  <img src="./../assets/icons/verified.svg" alt="verified">
+                </div>
+              </a>
+              <div class="flex justify-center">
+                <img src="./../assets/images/product10.webp" class="object-cover h-48" alt="product10.webp">
+              </div>
+              <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+              <a href="" target="_blank">
+                <sup>$</sup>
+                <span class="font-medium text-2xl">230</span>
+                <sup>99</sup>
+              </a>
+            </div>
+            <div class="grid gap-2 cursor-pointer clickable">
+              <a href="" target="_blank" class="flex items-center gap-2 pb-2">
+                <img class="size-12 rounded-full outline-2 outline-pink-400 outline-offset-2 object-cover"
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
+                  alt="Lisa Parker">
+                <div class="flex items-center gap-1">
+                  <span>@Lisaprkr</span>
+                  <img src="./../assets/icons/verified.svg" alt="verified">
+                </div>
+              </a>
+              <div class="flex justify-center">
+                <img src="./../assets/images/product2.png" class="object-cover h-48" alt="product2.png">
+              </div>
+              <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+              <a href="" target="_blank">
+                <sup>$</sup>
+                <span class="font-medium text-2xl">230</span>
+                <sup>99</sup>
+              </a>
+            </div>
+            <div class="grid gap-2 cursor-pointer clickable">
+              <a href="" target="_blank" class="flex items-center gap-2 pb-2">
+                <img class="size-12 rounded-full outline-2 outline-pink-400 outline-offset-2 object-cover"
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
+                  alt="Lisa Parker">
+                <div class="flex items-center gap-1">
+                  <span>@Lisaprkr</span>
+                  <img src="./../assets/icons/verified.svg" alt="verified">
+                </div>
+              </a>
+              <div class="flex justify-center">
+                <img src="./../assets/images/product3.png" class="object-cover h-48" alt="product3.png">
+              </div>
+              <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+              <a href="" target="_blank">
+                <sup>$</sup>
+                <span class="font-medium text-2xl">230</span>
+                <sup>99</sup>
+              </a>
+            </div>
+            <div class="grid gap-2 cursor-pointer clickable">
+              <a href="" target="_blank" class="flex items-center gap-2 pb-2">
+                <img class="size-12 rounded-full outline-2 outline-pink-400 outline-offset-2 object-cover"
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
+                  alt="Lisa Parker">
+                <div class="flex items-center gap-1">
+                  <span>@Lisaprkr</span>
+                  <img src="./../assets/icons/verified.svg" alt="verified">
+                </div>
+              </a>
+              <div class="flex justify-center">
+                <img src="./../assets/images/product4.png" class="object-cover h-48" alt="product4.png">
+              </div>
+              <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+              <a href="" target="_blank">
+                <sup>$</sup>
+                <span class="font-medium text-2xl">230</span>
+                <sup>99</sup>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-col gap-2 tab-panel hidden" id="People">
+          <div class="flex justify-between items-center">
+            <div class="flex gap-2">
+              <img src="./../assets/images/7.png" class="rounded-full size-14 flex-none" alt="7.png">
+              <div class="flex flex-col justify-center">
+                <p>Ava Carter</p>
+                <p class="text-[#0E0D0D80]">@avacarter</p>
+              </div>
+            </div>
+            <button class="w-24 py-2 rounded-full bg-black text-white">Follow</button>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex gap-2">
+              <img src="./../assets/images/7.png" class="rounded-full size-14 flex-none" alt="7.png">
+              <div class="flex flex-col justify-center">
+                <p>Ava Carter</p>
+                <p class="text-[#0E0D0D80]">@avacarter</p>
+              </div>
+            </div>
+            <button class="w-24 py-2 rounded-full border">Following</button>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex gap-2">
+              <img src="./../assets/images/7.png" class="rounded-full size-14 flex-none" alt="7.png">
+              <div class="flex flex-col justify-center">
+                <p>Ava Carter</p>
+                <p class="text-[#0E0D0D80]">@avacarter</p>
+              </div>
+            </div>
+            <button class="w-24 py-2 rounded-full bg-black text-white">Follow</button>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex gap-2">
+              <img src="./../assets/images/7.png" class="rounded-full size-14 flex-none" alt="7.png">
+              <div class="flex flex-col justify-center">
+                <p>Ava Carter</p>
+                <p class="text-[#0E0D0D80]">@avacarter</p>
+              </div>
+            </div>
+            <button class="w-24 py-2 rounded-full bg-black text-white">Follow</button>
+          </div>
+        </div>
+
+        <div class="grid-cols-2 gap-2 tab-panel hidden" id="Posts">
+          <div class="grid gap-2">
+            <a href="" target="_blank" class="flex items-center gap-2 pb-2">
+              <img class="size-12 rounded-full outline-2 outline-pink-400 outline-offset-2 object-cover"
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
+                alt="Lisa Parker">
+              <div class="flex items-center gap-1">
+                <span>@Lisaprkr</span>
+                <img src="./../assets/icons/verified.svg" alt="verified">
+              </div>
+            </a>
+            <a href="" target="_blank" class="flex min-w-36 min-h-48 relative justify-center bg-gray-500">
+              <img src="./../assets/images/post1.jpg" class="object-cover h-64" alt="post1.jpg">
+              <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+                +4 items
+              </p>
+              <img src="./../assets/icons/triangle.svg" class="absolute left-2 top-2" alt="triangle">
+            </a>
+          </div>
+          <div class="grid gap-2">
+            <a href="" target="_blank" class="flex items-center gap-2 pb-2">
+              <img class="size-12 rounded-full outline-2 outline-pink-400 outline-offset-2 object-cover"
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
+                alt="Lisa Parker">
+              <div class="flex items-center gap-1">
+                <span>@Lisaprkr</span>
+                <img src="./../assets/icons/verified.svg" alt="verified">
+              </div>
+            </a>
+            <a href="" target="_blank" class="flex min-w-36 min-h-48 relative justify-center bg-gray-500">
+              <img src="./../assets/images/post2.jpg" class="object-cover h-64" alt="post2.jpg">
+              <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+                +4 items
+              </p>
+              <img src="./../assets/icons/triangle.svg" class="absolute left-2 top-2" alt="triangle">
+            </a>
+          </div>
+          <div class="grid gap-2">
+            <a href="" target="_blank" class="flex items-center gap-2 pb-2">
+              <img class="size-12 rounded-full outline-2 outline-pink-400 outline-offset-2 object-cover"
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
+                alt="Lisa Parker">
+              <div class="flex items-center gap-1">
+                <span>@Lisaprkr</span>
+                <img src="./../assets/icons/verified.svg" alt="verified">
+              </div>
+            </a>
+            <a href="" target="_blank" class="flex min-w-36 min-h-48 relative justify-center bg-gray-500">
+              <img src="./../assets/images/post3.jpg" class="object-cover h-64" alt="post3.jpg">
+              <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+                +4 items
+              </p>
+              <img src="./../assets/icons/triangle.svg" class="absolute left-2 top-2" alt="triangle">
+            </a>
+          </div>
+          <div class="grid gap-2">
+            <a href="" target="_blank" class="flex items-center gap-2 pb-2">
+              <img class="size-12 rounded-full outline-2 outline-pink-400 outline-offset-2 object-cover"
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
+                alt="Lisa Parker">
+              <div class="flex items-center gap-1">
+                <span>@Lisaprkr</span>
+                <img src="./../assets/icons/verified.svg" alt="verified">
+              </div>
+            </a>
+            <a href="" target="_blank" class="flex min-w-36 min-h-48 relative justify-center bg-gray-500">
+              <img src="./../assets/images/post4.jpg" class="object-cover h-64" alt="post4.jpg">
+              <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+                +4 items
+              </p>
+              <img src="./../assets/icons/triangle.svg" class="absolute left-2 top-2" alt="triangle">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav
+    class="fixed bottom-2 left-5 right-5 block md:hidden mx-auto bg-white/40 backdrop-blur-sm rounded-full py-2 z-20 shadow-lg shadow-black/10 max-w-[356px] cc-nav-bar"
+    style="box-shadow: -14px -14px 7px -12px rgba(179, 179, 179, 1) inset;">
+    <div class="flex items-center justify-center gap-x-6 w-full">
+      <a href="" target="_blank">
+        <img src="./../assets/icons/home.svg" alt="Home" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/search.svg" alt="Search" class="size-9 p-[5px]">
+      </a>
+      <a href="" target="_blank" class="bg-white rounded-full p-2 shadow-md">
+        <img src="./../assets/icons/add.svg" alt="Add" class="size-6">
+      </a>
+      <a href="#">
+        <img src="./../assets/icons/shopping-cart.svg" alt="Cart" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/user.svg" alt="Profile" class="size-9">
+      </a>
+    </div>
+  </nav>
+
+  <script src="./../assets/js/search-result.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/global.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex justify-center bg-gray-200 max-w-[1400px] mx-auto my-0 cc-body">
+  <div class="flex-col pl-4 pb-24 hidden md:flex bg-white w-fit">
+    <div class="sticky top-7 flex flex-col left-2">
+      <div class="flex justify-start items-center font-medium text-xl mb-5">
+        <img src="./../assets/icons/bucket.svg" class="size-9" alt="bucket" />
+      </div>
+      <a class="text-black hover:text-red-500 mb-[6px]" href="" target="_blank">Home</a>
+      <a class="text-black hover:text-red-500 mb-[6px]" href="" target="_blank">Posts</a>
+      <a class="text-black hover:text-red-500 mb-[6px]" href="" target="_blank">Closet</a>
+      <a class="text-black hover:text-red-500" href="" target="_blank">Businesses</a>
+    </div>
+    <nav
+      class="fixed top-1/2 -translate-y-1/2 hidden md:block bg-white/40 backdrop-blur-sm rounded-full p-4 z-20 shadow-lg">
+      <div class="flex flex-col items-center justify-center gap-y-6">
+        <a href="" target="_blank">
+          <img src="./../assets/icons/home.svg" alt="Home" class="size-9">
+        </a>
+        <a href="" target="_blank">
+          <img src="./../assets/icons/search.svg" alt="Search" class="size-9 p-[5px]">
+        </a>
+        <a href="" target="_blank" class="rounded-full p-2 shadow-md">
+          <img src="./../assets/icons/add.svg" alt="Add" class="size-6">
+        </a>
+        <a href="" target="_blank">
+          <img src="./../assets/icons/shopping-cart.svg" alt="Cart" class="size-9">
+        </a>
+        <a href="" target="_blank">
+          <img src="./../assets/icons/user.svg" alt="Profile" class="size-9">
+        </a>
+      </div>
+    </nav>
+  </div>
+  <div class="bg-white w-full flex flex-col pb-24 items-center md:max-w-[1400px] max-w-[600px]">
+    <div class="bg-white w-full flex flex-col items-center max-w-[450px]">
+      <div class="grid grid-cols-3 items-center p-5 w-full">
+        <a class="" href="" target="_blank">
+          <img src="./../assets/icons/menu.svg" alt="menu" class="size-5 block md:hidden">
+        </a>
+        <div class="flex justify-center items-center gap-2">
+          <span class="font-medium">@Lisaprkr</span>
+          <img src="./../assets/icons/verified.svg" alt="verified" class="size-4">
+        </div>
+        <div class="flex justify-end items-center gap-2">
+          <a class="bg-gray-100 rounded-full p-2" href="" target="_blank">
+            <img src="./../assets/icons/alarm.svg" alt="alarm" class="size-5">
+          </a>
+          <a class="bg-gray-100 rounded-full p-2" href="" target="_blank">
+            <img src="./../assets/icons/link.svg" alt="link" class="size-5">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------ Profile Section ------------------ -->
+    <div class="px-5 py-8 text-center max-w-[450px] w-full cc-profile">
+      <div class="flex justify-evenly items-center">
+        <a href="" target="_blank">
+          <p class="text-2xl font-medium">27.2 K</p>
+          <p>Follower</p>
+        </a>
+        <div class="relative inline-block mx-auto mb-4">
+          <a href="" target="_blank">
+            <img class="h-32 w-32 rounded-full outline-4 outline-pink-400 outline-offset-4 object-cover"
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
+              alt="Lisa Parker">
+          </a>
+          <a class="absolute -top-2 -right-2 bg-black text-white rounded-full p-2" href="" target="_blank">
+            <img src="./../assets/icons/pencil-white.svg" alt="pencil" class="size-5 text-white">
+          </a>
+        </div>
+        <a href="" target="_blank">
+          <p class="text-2xl font-medium">1452</p>
+          <p>Following</p>
+        </a>
+      </div>
+      <div class="flex justify-center items-center gap-2">
+        <span class="text-lg font-semibold">Lisa Parker | Influencer</span>
+        <a href="" target="_blank">
+          <img src="./../assets/icons/pencil.svg" alt="pencil" class="size-3">
+        </a>
+      </div>
+      <p class="mt-1 text-gray-400 mx-auto leading-3.5 text-xs max-w-[450px]">
+        🌍✨ Fashion Enthusiast & Globe Trotter Sharing my journey through the latest trends and breathtaking
+        destinations.
+      </p>
+      <div class="mt-4 flex justify-center items-center gap-2">
+        <a class="flex items-center gap-2 border rounded-full px-4 py-1 bg-black text-white" href="" target="_blank">
+          Follow
+        </a>
+      </div>
+      <div class="flex justify-center items-center gap-4 mt-4">
+        <a href="" target="_blank"><img src="./../assets/icons/instagram.svg" alt="instagram"></a>
+        <a href="" target="_blank"><img src="./../assets/icons/power.svg" alt="power"></a>
+        <a href="" target="_blank"><img src="./../assets/icons/facebook.svg" alt="facebook"></a>
+        <a href="" target="_blank"><img src="./../assets/icons/email.svg" alt="email"></a>
+        <a href="" target="_blank"><img src="./../assets/icons/website.svg" alt="website"></a>
+        <a href="" target="_blank"><img src="./../assets/icons/youtube.svg" alt="youtube"></a>
+        <a href="" target="_blank"><img src="./../assets/icons/tiktok.svg" alt="tiktok"></a>
+      </div>
+    </div>
+
+    <div id="draggable-container" class="px-5 max-w-[600px]">
+      <div class="flex justify-between border-t-2 py-[10px] draggable-item" draggable="true">
+        <div class="flex">
+          <div class="drag-handle cursor-pointer"><img src="./../assets/icons/handle.svg" alt="handle"></div>
+          <a href="" target="_blank">
+            <img src="./../assets/images/3.png" class="size-[50px] rounded-sm ml-4 mr-2.5" alt="3.png">
+          </a>
+          <a href="" target="_blank" class="max-w-56">Dune: Prophecy | Official Trailer - Power | Max</a>
+        </div>
+        <a href="" target="_blank">
+          <img src="./../assets/icons/link.svg" class="size-5" alt="link">
+        </a>
+      </div>
+
+      <div class="flex justify-between border-t-2 py-[10px] draggable-item" draggable="true">
+        <div class="flex">
+          <div class="drag-handle cursor-pointer"><img src="./../assets/icons/handle.svg" alt="handle"></div>
+          <a href="" target="_blank">
+            <img src="./../assets/images/3.png" class="size-[50px] rounded-sm ml-4 mr-2.5" alt="3.png">
+          </a>
+          <a href="" target="_blank" class="max-w-56 truncate">Ewan Mitchell & Tom Glynn-Carney React To House of the
+            Dr...</a>
+        </div>
+        <a href="" target="_blank">
+          <img src="./../assets/icons/link.svg" class="size-5" alt="link">
+        </a>
+      </div>
+
+      <div class="flex justify-between border-t-2 py-[10px] draggable-item" draggable="true">
+        <div class="flex">
+          <div class="drag-handle cursor-pointer"><img src="./../assets/icons/handle.svg" alt="handle"></div>
+          <a href="" target="_blank" class="max-w-56 ml-4">Dune: Prophecy | Official Trailer - Power | Max</a>
+        </div>
+        <a href="" target="_blank">
+          <img src="./../assets/icons/link.svg" class="size-5" alt="link">
+        </a>
+      </div>
+
+      <div class="flex flex-col gap-2 border-t-2 py-[10px]">
+        <div class="flex">
+          <a href="" target="_blank">
+            <img src="./../assets/images/4.png" class="object-contain" alt="car">
+          </a>
+        </div>
+        <div class="flex justify-between gap-4">
+          <a href="" target="_blank" class="max-w-56">Dune: Prophecy | Official Trailer - Power | Max</a>
+          <div class="flex gap-4">
+            <a href="" target="_blank">
+              <img src="./../assets/icons/pencil.svg" class="size-5" alt="edit">
+            </a>
+            <a href="" target="_blank">
+              <img src="./../assets/icons/link.svg" class="size-5" alt="link">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="flex justify-between gap-2 py-2.5 border-t-2">
+        <div class="p-[10px] bg-black rounded-lg text-white w-full">
+          <div class="flex gap-2">
+            <div class="flex gap-2">
+              <img src="./../assets/images/5.png" class="size-24" alt="5.png">
+              <div class="flex flex-col justify-between">
+                <p class="flex items-center gap-2 text-sm">
+                  <span>1 DICE GAME</span>
+                  <img src="./../assets/icons/dot.svg" alt="dot">
+                  <span class="opacity-60">EASTSIDE</span>
+                </p>
+                <p class="flex items-center gap-2 text-sm">
+                  <span>2 Stranger</span>
+                  <img src="./../assets/icons/dot.svg" alt="dot">
+                  <span class="opacity-60">Emanuel Wynter</span>
+                </p>
+                <p class="flex items-center gap-2 text-sm">
+                  <span>3 Tomahawk</span>
+                  <img src="./../assets/icons/dot.svg" alt="dot">
+                  <span class="opacity-60">6 Cardinal</span>
+                </p>
+                <p class="flex items-center gap-2 text-sm">
+                  <span>4 Honey</span>
+                  <img src="./../assets/icons/dot.svg" alt="dot">
+                  <span class="opacity-60">The Blond</span>
+                </p>
+              </div>
+            </div>
+            <a href="" target="_blank">
+              <img src="./../assets/icons/wire.svg" alt="wire">
+            </a>
+          </div>
+          <p class="flex items-center gap-2 my-6">
+            <span>Tomahawk</span>
+            <img src="./../assets/icons/dot.svg" alt="dot">
+            <span class="opacity-60">6 Cardinal</span>
+          </p>
+          <div class="flex justify-between items-center">
+            <a class="rounded-lg bg-[#001A5C] text-white px-2 py-1" href="" target="_blank">Preview</a>
+            <div class="flex gap-8">
+              <div class="flex items-center gap-4">
+                <img src="./../assets/icons/backward.svg" class="size-6" alt="backward">
+                <img src="./../assets/icons/forward.svg" class="size-6" alt="forward">
+                <img src="./../assets/icons/add-to-list.svg" class="size-6" alt="add-to-list">
+                <img src="./../assets/icons/more.svg" class="w-6" alt="more">
+              </div>
+              <img src="./../assets/icons/play.svg" class="size-6" alt="play">
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="aspect-w-16 aspect-h-9 cc-video">
+        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/SqcY0GlETPk" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="flex justify-between border-t-2 border-b-2 py-[10px] draggable-item" draggable="true">
+        <div class="flex items-center">
+          <div class="drag-handle cursor-pointer"><img src="./../assets/icons/handle.svg" alt="handle"></div>
+          <a href="" target="_blank">
+            <img src="./../assets/images/3.png" class="size-[50px] rounded-sm ml-4 mr-2.5" alt="3.png">
+          </a>
+          <p class="max-w-56">Ewan Mitchell & Tom Glynn-Carney React To House</p>
+        </div>
+        <a href="" target="_blank">
+          <img src="./../assets/icons/link.svg" class="size-5" alt="link">
+        </a>
+      </div>
+    </div>
+
+    <div class="grid px-5 mt-4 max-w-[600px] w-full">
+      <a class="flex justify-center items-center gap-1 py-3 bg-black text-white rounded-full" href="" target="_blank">
+        Save
+      </a>
+    </div>
+  </div>
+  <nav
+    class="fixed bottom-2 left-5 right-5 block md:hidden mx-auto bg-white/40 backdrop-blur-sm rounded-full py-2 z-20 shadow-lg shadow-black/10 max-w-[356px] cc-nav-bar"
+    style="box-shadow: -14px -14px 7px -12px rgba(179, 179, 179, 1) inset;">
+    <div class="flex items-center justify-center gap-x-6 w-full">
+      <a href="" target="_blank">
+        <img src="./../assets/icons/home.svg" alt="Home" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/search.svg" alt="Search" class="size-9 p-[5px]">
+      </a>
+      <a href="" target="_blank" class="bg-white rounded-full p-2 shadow-md">
+        <img src="./../assets/icons/add.svg" alt="Add" class="size-6">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/shopping-cart.svg" alt="Cart" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/user.svg" alt="Profile" class="size-9">
+      </a>
+    </div>
+  </nav>
+  <script src="./../assets/js/follow.js"></script>
+</body>
+
+</html>

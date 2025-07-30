@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/global.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex justify-between bg-gray-200 max-w-[1400px] mx-auto my-0 cc-body-container">
+  <div class="bg-white w-full flex flex-col items-center md:max-w-[1400px] max-w-[600px]">
+    <div class="max-w-[600px] bg-white px-5 w-full pb-24 h-full flex flex-col">
+      <div class="flex justify-between items-center py-5">
+        <div>
+          <a class="bg-gray-100 rounded-full size-7 flex items-center justify-center" href="" target="_blank">
+            <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
+          </a>
+        </div>
+        <div class="flex justify-center items-center gap-2 font-medium text-xl">
+          Order №12
+        </div>
+        <div class="flex justify-end">
+          <a class="bg-gray-100 rounded-full size-9 flex items-center justify-center" href="" target="_blank">
+            <img src="./../assets/icons/alarm.svg" alt="alarm" class="w-4">
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center">
+        <div class="flex gap-4 items-center justify-center w-full">
+          <div class="flex flex-col items-center clickable cursor-pointer">
+            <div class="p-2 bg-[#0E0D0D0D] rounded-full size-9 flex items-center justify-center">
+              <img src="./../assets/icons/in-process.svg" alt="in-process" />
+            </div>
+            <p class="text-xs">Processing</p>
+          </div>
+          <div class="flex flex-col items-center clickable cursor-pointer">
+            <div class="p-2 bg-[#0E0D0D0D] rounded-full size-9 flex items-center justify-center">
+              <img src="./../assets/icons/collecting.svg" alt="collecting" />
+            </div>
+            <p class="text-xs">Collecting</p>
+          </div>
+          <div class="flex flex-col items-center clickable cursor-pointer">
+            <div class="p-2 bg-[#0E0D0D0D] rounded-full size-9 flex items-center justify-center">
+              <img src="./../assets/icons/delivery.svg" alt="delivery" />
+            </div>
+            <p class="text-xs">Delivery</p>
+          </div>
+          <div class="flex flex-col items-center clickable cursor-pointer">
+            <div class="p-2 bg-[#0E0D0D0D] rounded-full size-9 flex items-center justify-center">
+              <img src="./../assets/icons/check-gray.svg" alt="check-gray" />
+            </div>
+            <p class="text-xs">Completed</p>
+          </div>
+        </div>
+
+        <p class="font-semibold">Order list</p>
+        <div class="border-b border-[#00000033] flex justify-between w-full py-4 gap-2 clickable cursor-pointer">
+          <div>
+            <img src="./../assets/images/6.png" class="size-16" alt="6.png" />
+          </div>
+          <div class="flex-1 grid gap-2">
+            <p class="text-sm">Red Voyager Jacket</p>
+            <button class="text-xs text-nowrap px-4 py-2 w-fit rounded-full bg-[#FAFAFA]">Size: XS</button>
+            <button class="text-xs text-nowrap px-4 py-2 w-fit rounded-full bg-[#FAFAFA]">Color: Red</button>
+          </div>
+          <a href="" target="_blank">
+            <sup>$</sup>
+            <span class="font-medium text-2xl">230</span>
+            <sup>99</sup>
+          </a>
+        </div>
+        <div class="border-b border-[#00000033] flex justify-between w-full py-4 gap-2 clickable cursor-pointer">
+          <div>
+            <img src="./../assets/images/6.png" class="size-16" alt="6.png" />
+          </div>
+          <div class="flex-1 grid gap-2">
+            <p class="text-sm">Red Voyager Jacket</p>
+            <button class="text-xs text-nowrap px-4 py-2 w-fit rounded-full bg-[#FAFAFA]">Size: XS</button>
+            <button class="text-xs text-nowrap px-4 py-2 w-fit rounded-full bg-[#FAFAFA]">Color: Red</button>
+          </div>
+          <a href="" target="_blank">
+            <sup>$</sup>
+            <span class="font-medium text-2xl">230</span>
+            <sup>99</sup>
+          </a>
+        </div>
+
+        <div class="items-center pt-5 w-full">
+          <p class="font-semibold">Delivery</p>
+          <button class="border bg-[#FAFAFA] rounded-full py-4 flex justify-between px-6 w-full mt-2 clickable cursor-pointer">
+            <div class="flex gap-2 items-center">
+              <img src="./../assets/icons/location.svg" class="w-6" alt="location" />
+              <span class="font-light text-sm text-[#0E0D0D80]">Address:</span>
+              <span class="font-light text-sm">123 Broadway, New York, NY 10001</span>
+            </div>
+          </button>
+          <button class="border bg-[#FAFAFA] rounded-full py-4 flex justify-between px-6 w-full mt-2 clickable cursor-pointer">
+            <div class="flex gap-2 items-center">
+              <img src="./../assets/icons/arrival.svg" class="w-6" alt="arrival" />
+              <span class="font-light text-sm text-[#0E0D0D80]">Arrival</span>
+              <span class="font-light text-sm">April 12, 2025</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav
+    class="fixed bottom-2 left-5 right-5 block md:hidden mx-auto bg-white/40 backdrop-blur-sm rounded-full py-2 z-20 shadow-lg shadow-black/10 max-w-[356px] cc-nav-bar"
+    style="box-shadow: -14px -14px 7px -12px rgba(179, 179, 179, 1) inset;">
+    <div class="flex items-center justify-center gap-x-6 w-full">
+      <a href="" target="_blank">
+        <img src="./../assets/icons/home.svg" alt="Home" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/search.svg" alt="Search" class="size-9 p-[5px]">
+      </a>
+      <a href="" target="_blank" class="bg-white rounded-full p-2 shadow-md">
+        <img src="./../assets/icons/add.svg" alt="Add" class="size-6">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/shopping-cart.svg" alt="Cart" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/user.svg" alt="Profile" class="size-9">
+      </a>
+    </div>
+  </nav>
+
+  <script src="./../assets/js/clickables.js"></script>
+</body>
+
+</html>

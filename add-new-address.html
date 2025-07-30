@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/global.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex justify-center bg-gray-200 max-w-[1400px] mx-auto my-0 cc-body">
+  <div class="bg-white w-full flex flex-col items-center md:max-w-[1400px] max-w-[600px]">
+    <div class="max-w-[600px] bg-white flex flex-col items-center px-5 gap-2 w-full pb-24">
+      <div class="grid grid-cols-3 items-center py-5 w-full">
+        <div>
+          <a class="bg-gray-100 rounded-full size-7 flex items-center justify-center" href="" target="_blank">
+            <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
+          </a>
+        </div>
+        <div class="flex justify-center items-center gap-2 font-medium text-xl text-nowrap">
+          Add new address
+        </div>
+      </div>
+
+      <div class="grid gap-4 w-full">
+        <input type="text" class="flex justify-between items-center rounded-full bg-[#0E0D0D1A] h-14 px-6 w-full"
+          id="address" placeholder="Address*" />
+        <input type="text" class="flex justify-between items-center rounded-full bg-[#0E0D0D1A] h-14 px-6 w-full"
+          id="details" placeholder="Address (optional details)" />
+        <div class="grid grid-cols-3 gap-1">
+          <input type="text"
+            class="col-span-2 flex justify-between items-center rounded-full bg-[#0E0D0D1A] h-14 px-6 w-full" id="city"
+            placeholder="City*" />
+          <input type="text" class="flex justify-between items-center rounded-full bg-[#0E0D0D1A] h-14 px-6 w-full"
+            id="state" placeholder="State" />
+        </div>
+        <div class="grid grid-cols-3 gap-1">
+          <input type="text"
+            class="col-span-2 flex justify-between items-center rounded-full bg-[#0E0D0D1A] h-14 px-6 w-full"
+            id="country" placeholder="Country*" />
+          <input type="text" class="flex justify-between items-center rounded-full bg-[#0E0D0D1A] h-14 px-6 w-full"
+            id="postal" placeholder="Postal Code" />
+        </div>
+
+        <button class="rounded-full bg-black text-white py-3 w-full mt-4 clickable cursor-pointer">
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./../assets/js/clickables.js"></script>
+</body>
+
+</html>

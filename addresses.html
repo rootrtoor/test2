@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/global.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex justify-center bg-gray-200 max-w-[1400px] mx-auto my-0 cc-body">
+  <div class="bg-white w-full flex flex-col items-center md:max-w-[1400px] max-w-[600px]">
+    <div class="max-w-[600px] bg-white flex flex-col items-center px-5 gap-2 w-full pb-24">
+      <div class="grid grid-cols-3 items-center py-5 w-full">
+        <div>
+          <a class="bg-gray-100 rounded-full size-7 flex items-center justify-center" href="" target="_blank">
+            <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
+          </a>
+        </div>
+        <div class="flex justify-center items-center gap-2 font-medium text-xl text-nowrap">
+          Addresses
+        </div>
+      </div>
+
+      <div class="grid gap-2 w-full">
+        <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full cursor-pointer address-item" data-address-id="1">
+          <div class="flex items-center gap-2">
+            <div class="size-4 rounded-full bg-black flex items-center justify-center radio-button">
+              <img src="./../assets/icons/check-white.svg" alt="check-white" class="radio-icon" />
+            </div>
+            <p>123 Broadway, New York, NY 10001</p>
+          </div>
+          <img src="./../assets/icons/delete.svg" class="clickable cursor-pointer" alt="delete" />
+        </div>
+        <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full cursor-pointer address-item" data-address-id="2">
+          <div class="flex items-center gap-2">
+            <div class="size-4 rounded-full border flex items-center justify-center radio-button">
+              <img src="./../assets/icons/check-white.svg" alt="check-white" class="radio-icon hidden" />
+            </div>
+            <p>456 Park Avenue, New York, NY 10022</p>
+          </div>
+          <img src="./../assets/icons/delete.svg" class="clickable cursor-pointer" alt="delete" />
+        </div>
+        <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full cursor-pointer address-item" data-address-id="3">
+          <div class="flex items-center gap-2">
+            <div class="size-4 rounded-full border flex items-center justify-center radio-button">
+              <img src="./../assets/icons/check-white.svg" alt="check-white" class="radio-icon hidden" />
+            </div>
+            <p>789 Fifth Avenue, New York, NY 10003</p>
+          </div>
+          <img src="./../assets/icons/delete.svg" class="clickable cursor-pointer" alt="delete" />
+        </div>
+        <div class="flex items-center rounded-full border bg-[#FAFAFA] h-14 px-3 gap-1 w-full cursor-pointer clickable">
+          <img src="./../assets/icons/plus.svg" alt="plus" />
+          <p>Add new address</p>
+        </div>
+
+        <button class="rounded-full bg-black text-white py-3 w-full mt-4 clickable cursor-pointer">
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./../assets/js/addresses.js"></script>
+</body>
+
+</html>

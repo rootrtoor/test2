@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/global.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex justify-center bg-gray-200 max-w-[1400px] mx-auto my-0 cc-body">
+  <div class="bg-white w-full flex flex-col items-center md:max-w-[1400px] max-w-[600px]">
+    <div class="max-w-[600px] bg-white w-full pb-24">
+      <div class="grid grid-cols-5 items-center p-5">
+        <div>
+          <a class="bg-gray-100 rounded-full size-7 flex items-center justify-center" href="" target="_blank">
+            <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
+          </a>
+        </div>
+        <div class="flex justify-center items-center gap-2 font-medium text-xl col-span-3">
+          Withdraw
+        </div>
+        <div class="flex justify-end">
+          <a class="bg-gray-100 rounded-full size-9 flex items-center justify-center" href="" target="_blank">
+            <img src="./../assets/icons/alarm.svg" alt="alarm" class="size-6">
+          </a>
+        </div>
+      </div>
+
+      <div class="px-5">
+        <div class="flex justify-between items-center border-b py-1.5 border-[#0E0D0D0D]">
+          <p class="font-light text-sm text-[#0E0D0D80]">Available Balance</p>
+          <p class="font-semibold text-2xl">$1,234.56</p>
+        </div>
+
+        <input type="text" class="py-2.5 px-4 bg-[#0E0D0D1A] rounded-full w-full mt-4" id="details"
+          placeholder="Enter amount" />
+
+        <p class="text-[20px] mt-10">Payment method</p>
+        <div class="py-4 grid gap-4">
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full cursor-pointer payment-item" data-payment-id="1">
+            <div class="flex items-center gap-2">
+              <div class="size-4 rounded-full bg-black flex items-center justify-center radio-button">
+                <img src="./../assets/icons/check-white.svg" alt="check-white" class="radio-icon" />
+              </div>
+              <p>bank account ending 1777</p>
+            </div>
+            <img src="./../assets/icons/delete.svg" alt="delete" class="clickable" />
+          </div>
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full cursor-pointer payment-item" data-payment-id="2">
+            <div class="flex items-center gap-2">
+              <div class="size-4 rounded-full border flex items-center justify-center radio-button">
+                <img src="./../assets/icons/check-white.svg" alt="check-white" class="radio-icon hidden" />
+              </div>
+              <p>VISA card 1234</p>
+            </div>
+            <img src="./../assets/icons/delete.svg" alt="delete" class="clickable" />
+          </div>
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full cursor-pointer payment-item" data-payment-id="3">
+            <div class="flex items-center gap-2">
+              <div class="size-4 rounded-full border flex items-center justify-center radio-button">
+                <img src="./../assets/icons/check-white.svg" alt="check-white" class="radio-icon hidden" />
+              </div>
+              <p>American Express 8899</p>
+            </div>
+            <img src="./../assets/icons/delete.svg" alt="delete" class="clickable" />
+          </div>
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full cursor-pointer payment-item" data-payment-id="4">
+            <div class="flex items-center gap-2">
+              <div class="size-4 rounded-full border flex items-center justify-center radio-button">
+                <img src="./../assets/icons/check-white.svg" alt="check-white" class="radio-icon hidden" />
+              </div>
+              <div class="flex gap-2">
+                <img src="./../assets/icons/paypal.svg" alt="paypal" />
+                <span>PayPal</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-3 w-full cursor-pointer clickable">
+            <div class="flex items-center gap-2">
+              <img src="./../assets/icons/plus.svg" alt="plus" />
+              <div class="flex gap-2">
+                Add bank account
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="py-2.5 rounded-full bg-black text-white w-full cursor-pointer clickable">
+          Withdraw earnings
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./../assets/js/withdraw.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/global.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex justify-between bg-gray-200 max-w-[1400px] mx-auto my-0 cc-body-container">
+  <div class="bg-white w-full flex flex-col items-center md:max-w-[1400px] max-w-[600px]">
+  <div class="max-w-[600px] bg-white w-full pb-24">
+    <div class="grid grid-cols-5 items-center p-5">
+      <div>
+        <a class="bg-gray-100 rounded-full size-7 flex items-center justify-center" href="" target="_blank">
+          <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
+        </a>
+      </div>
+      <div class="flex justify-center items-center gap-2 font-medium text-xl col-span-3">
+        Post Preview
+      </div>
+      <div class="flex justify-end items-center">
+        <a class="bg-gray-100 rounded-full p-2" id="comments" href="" target="_blank">
+          <img src="./../assets/icons/link.svg" alt="link" class="size-5">
+        </a>
+      </div>
+    </div>
+
+    <!-- ------------------ Follow Section ------------------ -->
+    <div class="flex justify-between items-center px-5">
+      <a href="" target="_blank" class="flex items-center gap-2">
+        <img class="size-12 rounded-full outline-2 outline-pink-400 outline-offset-2 object-cover"
+          src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
+          alt="Lisa Parker">
+        <div class="flex items-center gap-1">
+          <span>@Lisaprkr</span>
+          <img src="./../assets/icons/verified.svg" alt="verified">
+        </div>
+      </a>
+      <a class="rounded-full px-8 text-white bg-black" href="" target="_blank">Follow</a>
+    </div>
+
+    <!-- ------------------ Follow Section ------------------ -->
+    <a href="" target="_blank" class="flex p-5 relative">
+      <img src="./../assets/images/post1.jpg" class="aspect-square w-full object-cover" alt="post1.jpg">
+      <div class="absolute left-8 top-9 flex items-center gap-1.5">
+        <img src="./../assets/icons/instagram-white.svg" alt="instagram-white">
+        <span class="text-white">2d ago</span>
+      </div>
+      <div
+        class="absolute right-8 top-8 flex justify-center items-center flex-none gap-1.5 size-9 bg-[#FAFAFA66] rounded-full">
+        <img src="./../assets/icons/cart-white.svg" alt="cart-white">
+      </div>
+      <div
+        class="absolute left-8 bottom-8 flex justify-center items-center text-white gap-1.5 px-4 py-2 bg-[#FAFAFA66] rounded-full">
+        <img src="./../assets/icons/cart-white.svg" alt="cart-white">
+        <span>8 Items</span>
+      </div>
+      <div class="absolute right-8 bottom-40 text-white flex flex-col items-center gap-1 w-8">
+        <img src="./../assets/icons/heart-white.svg" class="size-5" alt="heart-white">
+        <span>151k</span>
+      </div>
+      <div class="absolute right-8 bottom-24 text-white flex flex-col items-center gap-1 w-8">
+        <img src="./../assets/icons/bookmark.svg" class="size-5" alt="bookmark">
+        <span>11k</span>
+      </div>
+      <div class="absolute right-8 bottom-8 text-white flex flex-col items-center gap-1 w-8">
+        <img src="./../assets/icons/message.svg" class="size-5" alt="message">
+        <span>90k</span>
+      </div>
+    </a>
+
+    <!-- ------------------ Items in this Post Section ------------------ -->
+    <div class="grid gap-2 mt-8">
+      <div class="flex justify-between items-center px-5">
+        <p class="font-semibold text-xl">Items in this Post</p>
+        <a class="text- underline underline-offset-2" href="" target="_blank">Add all to Cart</a>
+      </div>
+      <div class="grid grid-cols-2 gap-2 px-5">
+        <div class="flex flex-col gap-2 justify-between">
+          <a href="" target="_blank" class="flex items-center justify-center">
+            <img src="./../assets/images/product10.webp" class="object-cover h-64" alt="product10.webp">
+          </a>
+          <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+          <a href="" target="_blank">
+            <sup>$</sup>
+            <span class="font-medium text-2xl">230</span>
+            <sup>99</sup>
+          </a>
+          <a class="border text-center rounded-full py-2" href="" target="_blank">See options</a>
+        </div>
+        <div class="flex flex-col gap-2 justify-between">
+          <a href="" target="_blank" class="flex items-center justify-center">
+            <img src="./../assets/images/product2.png" class="object-cover h-64" alt="product2.png">
+          </a>
+          <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+          <a href="" target="_blank">
+            <sup>$</sup>
+            <span class="font-medium text-2xl">230</span>
+            <sup>99</sup>
+          </a>
+          <a class="bg-black text-center text-white rounded-full py-2" href="" target="_blank">Add to Cart</a>
+        </div>
+        <div class="flex flex-col gap-2 justify-between">
+          <a href="" target="_blank" class="flex items-center justify-center">
+            <img src="./../assets/images/product3.png" class="object-cover h-64" alt="product3.png">
+          </a>
+          <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+          <a href="" target="_blank">
+            <sup>$</sup>
+            <span class="font-medium text-2xl">230</span>
+            <sup>99</sup>
+          </a>
+          <a class="bg-black text-center text-white rounded-full py-2" href="" target="_blank">Add to Cart</a>
+        </div>
+        <div class="flex flex-col gap-2 justify-between">
+          <a href="" target="_blank" class="flex items-center justify-center">
+            <img src="./../assets/images/product4.png" class="object-cover h-64" alt="product4.png">
+          </a>
+          <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+          <div>
+            <sup>$</sup>
+            <span class="font-medium text-2xl">230</span>
+            <sup>99</sup>
+          </div>
+          <a class="border text-center rounded-full py-2" href="" target="_blank">See options</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------ Search Modal ------------------ -->
+    <div id="search-modal" class="fixed inset-0 z-50 items-end justify-center bg-black/40 backdrop-blur-md hidden">
+      <div class="grid bg-white rounded-t-lg shadow-lg w-full max-w-md px-5 py-16 relative">
+        <button class="bg-[#7878801F] flex items-center justify-center rounded-full absolute right-4 top-4 size-8">
+          <img src="./../assets/icons/close-gray.svg" alt="close-gray">
+        </button>
+        <input type="text" class="bg-[#7676801F] placeholder:text-[#3C3C4399] py-2 px-4 rounded-xl" id="search-input"
+          placeholder="Search" />
+        <div class="grid grid-cols-4 gap-2">
+          <div class="flex flex-col items-center py-4">
+            <img src="./../assets/images/7.png" alt="7.png" class="size-16" />
+            <p class="text-xs text-center">Sandy Wilder Cheng</p>
+          </div>
+          <div class="flex flex-col items-center py-4">
+            <img src="./../assets/images/7.png" alt="7.png" class="size-16" />
+            <p class="text-xs text-center">Sandy Wilder Cheng</p>
+          </div>
+          <div class="flex flex-col items-center py-4">
+            <img src="./../assets/images/7.png" alt="7.png" class="size-16" />
+            <p class="text-xs text-center">Sandy Wilder Cheng</p>
+          </div>
+          <div class="flex flex-col items-center py-4">
+            <img src="./../assets/images/7.png" alt="7.png" class="size-16" />
+            <p class="text-xs text-center">Sandy Wilder Cheng</p>
+          </div>
+          <div class="flex flex-col items-center py-4">
+            <img src="./../assets/images/7.png" alt="7.png" class="size-16" />
+            <p class="text-xs text-center">Sandy Wilder Cheng</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- ------------------ Comments Modal ------------------ -->
+  <div id="comments-modal" class="fixed inset-0 z-50 items-end justify-center max-w-[396px] mx-auto hidden">
+    <div class="grid bg-white rounded-t-lg shadow-2xl w-full max-w-md px-5 py-8 relative max-h-[500px] z-50">
+      <p class="font-semibold text-2xl">Comments</p>
+      <div class="flex grid-1 my-3.5 gap-2">
+        <div class="py-2.5 px-7 rounded-full bg-black text-white">Top</div>
+        <div class="py-2.5 px-7 rounded-full bg-[#0E0D0D0D]">Newest</div>
+      </div>
+      <div class="grid gap-4 overflow-auto">
+        <div class="flex justify-between gap-4">
+          <div class="flex gap-2.5">
+            <div>
+              <img src="./../assets/images/7.png" alt="7.png">
+            </div>
+            <div>
+              <p class="flex items-center gap-2">
+                <span class="font-semibold text-sm">@stackedfit</span>
+                <img src="./../assets/icons/verified.svg" alt="verified">
+                <span class="text-[#0E0D0D80]">2d ago</span>
+              </p>
+              <p>Obsessed with this fit! 🔥 Where can I grab a pair?</p>
+              <p class="underline underline-offset-4 flex items-center gap-2">
+                <span>5 Replies</span>
+                <img src="./../assets/icons/arrow-right-sm.svg" alt="arrow-right-sm">
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="./../assets/icons/heart.svg" class="size-5" alt="heart">
+          </div>
+        </div>
+        <div class="flex justify-between gap-4">
+          <div class="flex gap-2.5">
+            <div>
+              <img src="./../assets/images/7.png" alt="7.png">
+            </div>
+            <div>
+              <p class="flex items-center gap-2">
+                <span class="font-semibold text-sm">@stackedfit</span>
+                <img src="./../assets/icons/verified.svg" alt="verified">
+                <span class="text-[#0E0D0D80]">2d ago</span>
+              </p>
+              <p>Obsessed with this fit! 🔥 Where can I grab a pair?</p>
+              <div class="flex items-center gap-4 text-[#0E0D0D80] mb-4">
+                <div class="flex items-center">
+                  <img src="./../assets/icons/heart-gray.svg" class="size-3" alt="heart-gray" />
+                  <span class="text-xs">12</span>
+                </div>
+                <div class="flex items-center">
+                  <img src="./../assets/icons/message-gray.svg" class="size-3" alt="message-gray" />
+                  <span class="text-xs">12</span>
+                </div>
+              </div>
+              <p class="underline underline-offset-4 flex items-center gap-2">
+                <span>5 Replies</span>
+                <img src="./../assets/icons/arrow-right-sm.svg" alt="arrow-right-sm">
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="./../assets/icons/heart-red.svg" class="size-5" alt="heart-red">
+          </div>
+        </div>
+        <div class="flex justify-between gap-4">
+          <div class="flex gap-2.5">
+            <div>
+              <img src="./../assets/images/7.png" alt="7.png">
+            </div>
+            <div>
+              <p class="flex items-center gap-2">
+                <span class="font-semibold text-sm">@stackedfit</span>
+                <img src="./../assets/icons/verified.svg" alt="verified">
+                <span class="text-[#0E0D0D80]">2d ago</span>
+              </p>
+              <p>Obsessed with this fit! 🔥 Where can I grab a pair?</p>
+              <div class="flex items-center gap-4 text-[#0E0D0D80] mb-4">
+                <div class="flex items-center">
+                  <img src="./../assets/icons/heart-gray.svg" class="size-3" alt="heart-gray" />
+                  <span class="text-xs">12</span>
+                </div>
+                <div class="flex items-center">
+                  <img src="./../assets/icons/message-gray.svg" class="size-3" alt="message-gray" />
+                  <span class="text-xs">12</span>
+                </div>
+              </div>
+              <p class="underline underline-offset-4 flex items-center gap-2">
+                <span>5 Replies</span>
+                <img src="./../assets/icons/arrow-right-sm.svg" alt="arrow-right-sm">
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="./../assets/icons/heart-red.svg" class="size-5" alt="heart-red">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="flex justify-center items-center gap-1 py-3 bg-black text-white rounded-full">
+      Publish
+    </button>
+  </div>
+
+  <nav
+    class="fixed bottom-2 left-5 right-5 block md:hidden mx-auto bg-white/40 backdrop-blur-sm rounded-full py-2 z-20 shadow-lg shadow-black/10 max-w-[356px] cc-nav-bar"
+    style="box-shadow: -14px -14px 7px -12px rgba(179, 179, 179, 1) inset;">
+    <div class="flex items-center justify-center gap-x-6 w-full">
+      <a href="" target="_blank">
+        <img src="./../assets/icons/home.svg" alt="Home" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/search.svg" alt="Search" class="size-9 p-[5px]">
+      </a>
+      <a href="" target="_blank" class="bg-white rounded-full p-2 shadow-md">
+        <img src="./../assets/icons/add.svg" alt="Add" class="size-6">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/shopping-cart.svg" alt="Cart" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/user.svg" alt="Profile" class="size-9">
+      </a>
+    </div>
+  </nav>
+
+  <script src="./../assets/js/post-preview.js"></script>
+</body>
+
+</html>

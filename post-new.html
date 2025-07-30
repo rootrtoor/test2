@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/global.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex justify-between bg-gray-200 max-w-[1400px] mx-auto my-0 cc-body-container">
+  <div class="bg-white w-full flex flex-col items-center md:max-w-[1400px] max-w-[600px]">
+    <div class="max-w-[600px] bg-white w-full pb-24">
+      <div class="grid grid-cols-3 items-center p-5">
+        <div>
+          <a class="rounded-full size-7 flex items-center justify-center" href="" target="_blank">
+            <img src="./../assets/icons/menu.svg" alt="menu" class="w-6 h-4">
+          </a>
+        </div>
+        <div class="flex justify-center items-center gap-2 font-medium text-xl">
+        </div>
+        <div class="flex justify-end items-center">
+          <button class="bg-gray-100 rounded-full p-2 clickable cursor-pointer" id="comments">
+            <img src="./../assets/icons/link.svg" alt="link" class="size-5">
+          </button>
+        </div>
+      </div>
+
+      <!-- ------------------ Follow Section ------------------ -->
+      <div class="flex justify-between items-center px-5">
+        <a href="" target="_blank" class="flex items-center gap-2">
+          <img class="size-12 rounded-full outline-2 outline-pink-400 outline-offset-2 object-cover"
+            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
+            alt="Lisa Parker">
+          <div class="flex items-center gap-1">
+            <span>@Lisaprkr</span>
+            <img src="./../assets/icons/verified.svg" alt="verified" />
+          </div>
+        </a>
+        <img src="./../assets/icons/settings.svg" class="px-2" id="edit-post" alt="settings" />
+      </div>
+
+      <!-- ------------------ Follow Section ------------------ -->
+      <a href="" target="_blank" class="flex p-5 relative">
+        <img src="./../assets/images/6.png" class="aspect-square w-full" alt="6.png">
+        <div class="absolute left-8 top-9 flex items-center gap-1.5">
+          <img src="./../assets/icons/instagram-white.svg" alt="instagram-white">
+          <span class="text-white">2d ago</span>
+        </div>
+        <div
+          class="absolute right-8 top-8 flex justify-center items-center flex-none gap-1.5 size-9 bg-[#FAFAFA66] rounded-full">
+          <img src="./../assets/icons/cart-white.svg" alt="cart-white">
+        </div>
+        <div
+          class="absolute left-8 bottom-8 flex justify-center items-center text-white gap-1.5 px-4 py-2 bg-[#FAFAFA66] rounded-full">
+          <img src="./../assets/icons/cart-white.svg" alt="cart-white">
+          <span>8 Items</span>
+        </div>
+        <div class="absolute right-8 bottom-40 text-white flex flex-col items-center gap-1 w-8">
+          <img src="./../assets/icons/heart-white.svg" class="size-5" alt="heart-white">
+          <span>151k</span>
+        </div>
+        <div class="absolute right-8 bottom-24 text-white flex flex-col items-center gap-1 w-8">
+          <img src="./../assets/icons/bookmark.svg" class="size-5" alt="bookmark">
+          <span>11k</span>
+        </div>
+        <div class="absolute right-8 bottom-8 text-white flex flex-col items-center gap-1 w-8">
+          <img src="./../assets/icons/message.svg" class="size-5" alt="message">
+          <span>90k</span>
+        </div>
+      </a>
+
+      <!-- ------------------ Items in this Post Section ------------------ -->
+      <div class="grid gap-2 mt-8">
+        <div class="flex justify-between items-center px-5">
+          <p class="font-semibold text-xl">Items in this Post</p>
+          <a class="text- underline underline-offset-2" href="" target="_blank">Add all to Cart</a>
+        </div>
+        <div class="grid grid-cols-2 gap-2 px-5">
+          <div class="flex flex-col gap-2">
+            <a href="" target="_blank">
+              <img src="./../assets/images/2.png" alt="2.png">
+            </a>
+            <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+            <a href="" target="_blank">
+              <sup>$</sup>
+              <span class="font-medium text-2xl">230</span>
+              <sup>99</sup>
+            </a>
+            <a class="border text-center rounded-full py-2" href="" target="_blank">See options</a>
+          </div>
+          <div class="flex flex-col gap-2">
+            <a href="" target="_blank">
+              <img src="./../assets/images/2.png" alt="2.png">
+            </a>
+            <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+            <a href="" target="_blank">
+              <sup>$</sup>
+              <span class="font-medium text-2xl">230</span>
+              <sup>99</sup>
+            </a>
+            <a class="bg-black text-center text-white rounded-full py-2" href="" target="_blank">Add to Cart</a>
+          </div>
+          <div class="flex flex-col gap-2">
+            <a href="" target="_blank">
+              <img src="./../assets/images/2.png" alt="2.png">
+            </a>
+            <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+            <a href="" target="_blank">
+              <sup>$</sup>
+              <span class="font-medium text-2xl">230</span>
+              <sup>99</sup>
+            </a>
+            <a class="bg-black text-center text-white rounded-full py-2" href="" target="_blank">Add to Cart</a>
+          </div>
+          <div class="flex flex-col gap-2">
+            <a href="" target="_blank">
+              <img src="./../assets/images/2.png" alt="2.png">
+            </a>
+            <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+            <a href="" target="_blank">
+              <sup>$</sup>
+              <span class="font-medium text-2xl">230</span>
+              <sup>99</sup>
+            </a>
+            <a class="border text-center rounded-full py-2" href="" target="_blank">See options</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------------ Edit Avatar Modal ------------------ -->
+  <div id="edit-post-modal" class="fixed inset-0 z-50 items-end justify-center bg-black/40 backdrop-blur-md hidden">
+    <div class="grid bg-white rounded-t-lg shadow-lg w-full p-5 pb-24 relative max-w-[560px]">
+      <div class="border-t-2 py-4 flex items-center gap-3 cursor-pointer clickable">
+        <img src="./../assets/icons/link.svg" class="size-4" alt="link" />
+        <span>Share</span>
+      </div>
+      <div class="border-t-2 py-4 flex items-center gap-3 cursor-pointer clickable">
+        <img src="./../assets/icons/pencil.svg" class="size-4" alt="pencil" />
+        <span>Edit post</span>
+      </div>
+      <div class="border-t-2 border-b-2 py-4 flex items-center gap-3 cursor-pointer clickable">
+        <img src="./../assets/icons/delete-red.svg" class="size-4" alt="delete-red" />
+        <span class="text-[#FF000A]">Delete</span>
+      </div>
+    </div>
+  </div>
+
+  <nav
+    class="fixed bottom-2 left-5 right-5 mx-auto block md:hidden bg-white/40 backdrop-blur-sm rounded-full py-2 z-20 shadow-lg shadow-black/10 max-w-[356px]"
+    style="box-shadow: -14px -14px 7px -12px rgba(179, 179, 179, 1) inset;">
+    <div class="flex items-center justify-center gap-x-6 w-full">
+      <a href="" target="_blank">
+        <img src="./../assets/icons/home.svg" alt="Home" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/search.svg" alt="Search" class="size-9 p-[5px]">
+      </a>
+      <a href="" target="_blank" class="bg-white rounded-full p-2 shadow-md">
+        <img src="./../assets/icons/add.svg" alt="Add" class="size-6">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/shopping-cart.svg" alt="Cart" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/user.svg" alt="Profile" class="size-9">
+      </a>
+    </div>
+  </nav>
+
+  <script src="./../assets/js/post-new.js"></script>
+</body>
+
+</html>

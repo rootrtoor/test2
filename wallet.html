@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/global.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex justify-between bg-gray-200 max-w-[1400px] mx-auto my-0 cc-body-container">
+  <div class="bg-white w-full flex flex-col items-center md:max-w-[1400px] max-w-[600px]">
+    <div class="max-w-[600px] bg-white w-full pb-24">
+      <div class="grid grid-cols-5 items-center p-5">
+        <div class="flex items-center">
+          <a class="bg-gray-100 rounded-full size-7 flex items-center justify-center" href="" target="_blank">
+            <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
+          </a>
+        </div>
+        <div class="flex justify-center items-center gap-2 font-medium text-xl col-span-3">
+          Wallet
+        </div>
+        <div class="flex justify-end">
+          <a class="bg-gray-100 rounded-full size-9 flex items-center justify-center" href="" target="_blank">
+            <img src="./../assets/icons/alarm.svg" alt="alarm" class="w-4">
+          </a>
+        </div>
+      </div>
+
+      <div class="px-5">
+        <div class="flex justify-between items-center border-b py-1.5 border-[#0E0D0D0D]">
+          <p class="font-light text-sm text-[#0E0D0D80]">Total Balance</p>
+          <p class="font-semibold text-2xl">$1,234.56</p>
+        </div>
+        <div class="flex justify-between items-center mt-4">
+          <p class="font-light text-sm text-[#0E0D0D80]">Available Balance</p>
+          <p class="font-semibold">$1,234.56</p>
+        </div>
+        <div class="flex justify-between items-center mt-2">
+          <p class="font-light text-sm text-[#0E0D0D80]">Pending Balance</p>
+          <p class="font-semibold">$234.56</p>
+        </div>
+        <div class="grid grid-cols-2 gap-1 mt-9">
+          <button class="bg-black text-white rounded-full py-2 clickable cursor-pointer">Withdraw earnings</button>
+          <button class="flex items-center justify-center gap-1 rounded-full border py-2 clickable cursor-pointer">
+            <img src="./../assets/icons/bucket.svg" alt="bucket" />
+            <span>Send in CopyCart</span>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-2 mt-6">
+          <div class="border-b-2 border-brand-red text-brand-red py-2 text-center cursor-pointer tab-btn"
+            data-tab-target="#Transactions">Transactions</div>
+          <div class="py-2 text-center cursor-pointer tab-btn" data-tab-target="#PaymentMethods">Payment Methods</div>
+        </div>
+
+        <!-- ------------------ Transactions Tab ------------------ -->
+        <div id="Transactions" class="tab-panel py-4 grid gap-4">
+          <div class="flex gap-2 overflow-x-auto">
+            <div class="py-2 px-4 bg-brand-red text-white rounded-full cursor-pointer clickable">Orders</div>
+            <div class="py-2 px-4 bg-gray-100 rounded-full cursor-pointer clickable">Withdrawn</div>
+            <div class="py-2 px-4 bg-gray-100 rounded-full cursor-pointer clickable">Send</div>
+            <div class="py-2 px-4 bg-gray-100 rounded-full cursor-pointer clickable">Cashbacks</div>
+            <div class="py-2 px-4 bg-gray-100 rounded-full cursor-pointer clickable">Withdrawn</div>
+            <div class="py-2 px-4 bg-gray-100 rounded-full cursor-pointer clickable">Send</div>
+            <div class="py-2 px-4 bg-gray-100 rounded-full cursor-pointer clickable">Cashbacks</div>
+          </div>
+
+          <div class="relative w-full">
+            <input type="text" class="py-2.5 pl-10 bg-[#0E0D0D1A] rounded-full w-full" id="details"
+              placeholder="search for transactions" />
+            <img src="./../assets/icons/search.svg" class="absolute left-4 top-4" alt="search" />
+          </div>
+
+          <div class="flex gap-2 items-center">
+            <img src="./../assets/images/luna.png" class="size-8" alt="luna.png" />
+            <p>Luna Fashion Store</p>
+          </div>
+
+          <div class="flex gap-2 border-b border-[#00000033] pb-4 clickable cursor-pointer">
+            <div>
+              <img src="./../assets/images/4.png" class="size-16" alt="4.png" />
+            </div>
+            <div class="flex-1">
+              <div class="flex gap-1">
+                <img src="./../assets/icons/date.svg" alt="date" />
+                <span class="text-xs">02/05/2025</span>
+              </div>
+              <p class="font-medium">Red Voyager Jacket</p>
+            </div>
+            <div class="flex flex-col items-end">
+              <a href="" target="_blank">
+                <span>-</span>
+                <sup>$</sup>
+                <span class="font-medium text-2xl">230</span>
+                <sup>99</sup>
+              </a>
+              <div class="px-2 py-1 rounded-full bg-[#F6888E4D] flex gap-1">
+                <img src="./../assets/icons/in-process.svg" alt="in-process" />
+                <span class="text-brand-red text-sm">In process</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-2 items-center">
+            <img src="./../assets/images/luna.png" class="size-8" alt="luna.png" />
+            <p>Luna Fashion Store</p>
+          </div>
+
+          <div class="flex gap-2 border-b border-[#00000033] pb-4 clickable cursor-pointer">
+            <div>
+              <img src="./../assets/images/4.png" class="size-16" alt="4.png" />
+            </div>
+            <div class="flex-1">
+              <div class="flex gap-1">
+                <img src="./../assets/icons/date.svg" alt="date" />
+                <span class="text-xs">02/05/2025</span>
+              </div>
+              <p class="font-medium text-[#21A400]">Commission</p>
+              <p class="font-medium">Red Voyager Jacket</p>
+            </div>
+            <div class="flex flex-col items-end">
+              <a href="" target="_blank" class="text-[#21A400]">
+                <span>+</span>
+                <sup>$</sup>
+                <span class="font-medium text-2xl">230</span>
+                <sup>99</sup>
+              </a>
+              <div class="px-2 py-1 rounded-full bg-gray-100 flex gap-1">
+                <img src="./../assets/icons/check-green.svg" alt="check-green" />
+                <span class="text-[#21A400] text-sm">Completed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ------------------ Payment methods Tab ------------------ -->
+        <div id="PaymentMethods" class="tab-panel py-4 gap-4 hidden">
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full cursor-pointer clickable">
+            <div class="flex items-center gap-2">
+              <div class="size-4 rounded-full bg-black flex items-center justify-center">
+                <img src="./../assets/icons/check-white.svg" alt="check-white" />
+              </div>
+              <p>bank account ending 1777</p>
+            </div>
+            <img src="./../assets/icons/delete.svg" alt="delete" />
+          </div>
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full cursor-pointer clickable">
+            <div class="flex items-center gap-2">
+              <div class="size-4 rounded-full border flex items-center justify-center"></div>
+              <p>VISA card 1234</p>
+            </div>
+            <img src="./../assets/icons/delete.svg" alt="delete" />
+          </div>
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full cursor-pointer clickable">
+            <div class="flex items-center gap-2">
+              <div class="size-4 rounded-full border flex items-center justify-center"></div>
+              <p>American Express 8899</p>
+            </div>
+            <img src="./../assets/icons/delete.svg" alt="delete" />
+          </div>
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full cursor-pointer clickable">
+            <div class="flex items-center gap-2">
+              <div class="size-4 rounded-full border flex items-center justify-center"></div>
+              <div class="flex gap-2">
+                <img src="./../assets/icons/paypal.svg" alt="paypal" />
+                <span>PayPal</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-3 w-full cursor-pointer clickable">
+            <div class="flex items-center gap-2">
+              <img src="./../assets/icons/plus.svg" alt="plus" />
+              <div class="flex gap-2">
+                Add bank account
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-3 w-full cursor-pointer clickable">
+            <div class="flex items-center gap-2">
+              <img src="./../assets/icons/plus.svg" alt="plus" />
+              <div class="flex gap-2">
+                Add Card
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./../assets/js/wallet.js"></script>
+  <script src="./../assets/js/clickables.js"></script>
+</body>
+
+</html>

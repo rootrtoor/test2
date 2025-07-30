@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/global.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex justify-center bg-gray-200 max-w-[1400px] mx-auto my-0 cc-body">
+  <div class="bg-white w-full flex flex-col items-center cc-container">
+    <div class="md:max-w-[80%] px:5 bg-white w-full pb-24 flex flex-col items-center cc-container-inner">
+      <div class="grid grid-cols-3 items-center p-5 max-w-[450px] w-full cc-header">
+        <div>
+          <img src="./../assets/icons/bucket.svg" alt="bucket" class="size-9">
+        </div>
+        <div class="flex justify-center items-center gap-2">
+          <span class="font-medium">@Lisaprkr</span>
+          <img src="./../assets/icons/verified.svg" alt="verified" class="size-4">
+        </div>
+        <div class="flex justify-end items-center">
+          <a class="bg-gray-100 rounded-full p-2" href="" target="_blank">
+            <img src="./../assets/icons/link.svg" alt="link" class="size-5">
+          </a>
+        </div>
+      </div>
+
+      <!-- ------------------ Profile Section ------------------ -->
+      <div class="px-5 py-8 text-center max-w-[450px] w-full cc-profile">
+        <div class="flex justify-evenly items-center">
+          <a href="" target="_blank">
+            <p class="text-2xl font-medium">27.2 K</p>
+            <p>Follower</p>
+          </a>
+          <div class="relative inline-block mx-auto mb-4">
+            <a href="" target="_blank">
+              <img class="h-32 w-32 rounded-full outline-4 outline-pink-400 outline-offset-4 object-cover"
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
+                alt="Lisa Parker">
+            </a>
+            <a class="absolute -top-2 -right-2 bg-black text-white rounded-full p-2" href="" target="_blank">
+              <img src="./../assets/icons/pencil-white.svg" alt="pencil" class="size-5 text-white">
+            </a>
+          </div>
+          <a href="" target="_blank">
+            <p class="text-2xl font-medium">1452</p>
+            <p>Following</p>
+          </a>
+        </div>
+        <div class="flex justify-center items-center gap-2">
+          <span class="text-lg font-semibold">Lisa Parker @lisa</span>
+          <a href="" target="_blank">
+            <img src="./../assets/icons/pencil.svg" alt="pencil" class="size-3">
+          </a>
+        </div>
+        <p class="mt-1 text-gray-400 mx-auto leading-3.5 text-xs max-w-[450px]">
+          🌍✨ Fashion Enthusiast & Globe Trotter Sharing my journey through the latest trends and breathtaking
+          destinations.
+        </p>
+        <div class="mt-4 flex justify-center items-center gap-2">
+          <a class="flex items-center gap-2 rounded-full px-11 py-1 bg-[#0E0D0D1A]" href="" target="_blank">
+            About
+          </a>
+          <a class="flex items-center gap-2 rounded-full px-11 py-1 bg-black text-white" href="" target="_blank">
+            Follow
+          </a>
+        </div>
+      </div>
+
+      <!-- ------------------ Tabs Section ------------------ -->
+      <div class="flex overflow-x-auto px-5 max-w-full cc-tabs">
+        <div class="px-4 py-2 tab-btn border-b-2 border-brand-red text-brand-red cursor-pointer"
+          data-tab-target="#Home">Home</div>
+        <div class="px-4 py-2 tab-btn cursor-pointer" data-tab-target="#Posts">Posts</div>
+        <div class="px-4 py-2 tab-btn cursor-pointer" data-tab-target="#Closet">Closet</div>
+        <div class="px-4 py-2 tab-btn cursor-pointer" data-tab-target="#Business">Business</div>
+        <div class="px-4 py-2 tab-btn cursor-pointer" data-tab-target="#Posts">Posts</div>
+        <div class="px-4 py-2 tab-btn cursor-pointer" data-tab-target="#Closet">Closet</div>
+        <div class="px-4 py-2 tab-btn cursor-pointer" data-tab-target="#Business">Business</div>
+        <div class="px-4 py-2 tab-btn cursor-pointer" data-tab-target="#Posts">Posts</div>
+        <div class="px-4 py-2 tab-btn cursor-pointer" data-tab-target="#Closet">Closet</div>
+        <div class="px-4 py-2 tab-btn cursor-pointer" data-tab-target="#Business">Business</div>
+      </div>
+
+      <!-- ------------------ Home Tab ------------------ -->
+      <div id="Home" class="tab-panel">
+        <!-- ------------------ Posts Section ------------------ -->
+        <div class="grid gap-2 mt-8">
+          <div class="flex justify-between items-center px-5">
+            <p class="font-semibold text-xl">Posts</p>
+            <a href="" target="_blank" class="text- underline underline-offset-2">View all</a>
+          </div>
+          <div class="flex gap-1 overflow-x-auto px-5">
+            <a href="./post-detail.html" class="flex min-w-36 min-h-48 relative cc-closet-item">
+              <img src="./../assets/images/DRHYIaem1DGbc_5WXfmc4w2mK94LrxgaUqmH5OUOfCuUA.png" class="object-cover w-48"
+                alt="DRHYIaem1DGbc_5WXfmc4w2mK94LrxgaUqmH5OUOfCuUA.png">
+              <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+                +4 items
+              </p>
+            </a>
+            <a href="./post-detail.html" class="flex min-w-36 min-h-48 relative cc-closet-item">
+              <img src="./../assets/images/product9.webp" class="object-cover w-48" alt="product9.webp">
+              <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+                +4 items
+              </p>
+            </a>
+            <a href="./post-detail.html" class="flex min-w-36 min-h-48 relative cc-closet-item">
+              <img src="./../assets/images/post3.jpg" class="object-cover w-48" alt="post3.jpg">
+              <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+                +4 items
+              </p>
+            </a>
+            <a href="./post-detail.html" class="flex min-w-36 min-h-48 relative cc-closet-item">
+              <img src="./../assets/images/DRHYIaem1DGbc_5WXfmc4w2mK94LrxgaUqmH5OUOfCuUA.png" class="object-cover w-48"
+                alt="DRHYIaem1DGbc_5WXfmc4w2mK94LrxgaUqmH5OUOfCuUA.png">
+              <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+                +4 items
+              </p>
+            </a>
+            <a href="./post-detail.html" class="flex min-w-36 min-h-48 relative cc-closet-item">
+              <img src="./../assets/images/product9.webp" class="object-cover w-48" alt="product9.webp">
+              <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+                +4 items
+              </p>
+            </a>
+            <a href="./post-detail.html" class="flex min-w-36 min-h-48 relative cc-closet-item">
+              <img src="./../assets/images/DRHYIaem1DGbc_5WXfmc4w2mK94LrxgaUqmH5OUOfCuUA.png" class="object-cover w-48"
+                alt="DRHYIaem1DGbc_5WXfmc4w2mK94LrxgaUqmH5OUOfCuUA.png">
+              <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+                +4 items
+              </p>
+            </a>
+            <a href="./post-detail.html" class="flex min-w-36 min-h-48 relative cc-closet-item">
+              <img src="./../assets/images/product9.webp" class="object-cover w-48" alt="product9.webp">
+              <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+                +4 items
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <!-- ------------------ Closet Section ------------------ -->
+        <div class="grid gap-2 mt-8">
+          <div class="flex justify-between items-center px-5">
+            <p class="font-semibold text-xl">Closet</p>
+            <a href="" target="_blank" class="text- underline underline-offset-2">View all</a>
+          </div>
+          <div class="flex gap-1 overflow-x-auto px-5">
+            <a class="rounded-full px-4 py-1 text-white bg-brand-red" href="" target="_blank">Latest</a>
+            <a class="rounded-full px-4 py-1 bg-gray-100" href="" target="_blank">Beauty</a>
+            <a class="rounded-full px-4 py-1 bg-gray-100" href="" target="_blank">Fashion</a>
+            <a class="rounded-full px-4 py-1 bg-gray-100" href="" target="_blank">Shoes</a>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-2 px-5">
+            <div class="flex flex-col justify-between cc-product-item">
+              <a href="" target="_blank" class="flex justify-center">
+                <img src="./../assets/images/closet.png" class="object-cover h-48" alt="closet.png" />
+              </a>
+              <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+              <a href="" target="_blank">
+                <sup>$</sup>
+                <span class="font-medium text-2xl">230</span>
+                <sup>99</sup>
+              </a>
+              <a class="border text-center rounded-full py-2" href="" target="_blank">See options</a>
+            </div>
+            <div class="flex flex-col justify-between cc-product-item">
+              <a href="" target="_blank" class="flex justify-center">
+                <img src="./../assets/images/product2.png" class="object-cover h-48" alt="product2.png" />
+              </a>
+              <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+              <a href="" target="_blank">
+                <sup>$</sup>
+                <span class="font-medium text-2xl">230</span>
+                <sup>99</sup>
+              </a>
+              <a class="bg-black text-center text-white rounded-full py-2" href="" target="_blank">Add to Cart</a>
+            </div>
+            <div class="flex flex-col justify-between cc-product-item">
+              <a href="" target="_blank" class="flex justify-center">
+                <img src="./../assets/images/product3.png" class="object-cover h-48" alt="product3.png" />
+              </a>
+              <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+              <a href="" target="_blank">
+                <sup>$</sup>
+                <span class="font-medium text-2xl">230</span>
+                <sup>99</sup>
+              </a>
+              <a class="bg-black text-center text-white rounded-full py-2" href="" target="_blank">Add to Cart</a>
+            </div>
+            <div class="flex flex-col justify-between cc-product-item">
+              <a href="" target="_blank" class="flex justify-center">
+                <img src="./../assets/images/product4.png" class="object-cover h-48" alt="product4.png" />
+              </a>
+              <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+              <a href="" target="_blank">
+                <sup>$</sup>
+                <span class="font-medium text-2xl">230</span>
+                <sup>99</sup>
+              </a>
+              <a class="border text-center rounded-full py-2" href="" target="_blank">See options</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ------------------ Posts Section ------------------ -->
+      <div id="Posts" class="tab-panel hidden">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-1 p-5">
+          <a href="./post-detail.html" class="flex relative">
+            <img src="./../assets/images/tYjC18agHPQXOy0DMb2j6g2eHM9k03-zU2VhGbB96ifgQ.png" class="object-cover w-48"
+              alt="tYjC18agHPQXOy0DMb2j6g2eHM9k03-zU2VhGbB96ifgQ.png" />
+            <img src="./../assets/icons/triangle.svg" alt="triangle" class="left-2 top-1 absolute">
+            <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+              +4 items
+            </p>
+          </a>
+          <a href="./post-detail.html" class="flex relative">
+            <img src="./../assets/images/post9.jpg" class="object-cover w-48" alt="post9.jpg">
+            <img src="./../assets/icons/triangle.svg" alt="triangle" class="left-2 top-1 absolute">
+            <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+              +4 items
+            </p>
+          </a>
+          <a href="./post-detail.html" class="flex relative">
+            <img src="./../assets/images/post3.jpg" class="object-cover w-48" alt="post3.jpg">
+            <img src="./../assets/icons/triangle.svg" alt="triangle" class="left-2 top-1 absolute">
+            <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+              +4 items
+            </p>
+          </a>
+          <a href="./post-detail.html" class="flex relative">
+            <img src="./../assets/images/DRHYIaem1DGbc_5WXfmc4w2mK94LrxgaUqmH5OUOfCuUA.png" class="object-cover w-48"
+              alt="DRHYIaem1DGbc_5WXfmc4w2mK94LrxgaUqmH5OUOfCuUA.png" />
+            <img src="./../assets/icons/triangle.svg" alt="triangle" class="left-2 top-1 absolute">
+            <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+              +4 items
+            </p>
+          </a>
+          <a href="./post-detail.html" class="flex relative">
+            <img src="./../assets/images/DRHYIaem1DGbc_5WXfmc4w2mK94LrxgaUqmH5OUOfCuUA.png" class="object-cover w-48"
+              alt="DRHYIaem1DGbc_5WXfmc4w2mK94LrxgaUqmH5OUOfCuUA.png" />
+            <img src="./../assets/icons/triangle.svg" alt="triangle" class="left-2 top-1 absolute">
+            <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+              +4 items
+            </p>
+          </a>
+          <a href="./post-detail.html" class="flex relative">
+            <img src="./../assets/images/product9.webp" class="object-cover w-48" alt="product9.webp">
+            <img src="./../assets/icons/triangle.svg" alt="triangle" class="left-2 top-1 absolute">
+            <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+              +4 items
+            </p>
+          </a>
+          <a href="./post-detail.html" class="flex relative">
+            <img src="./../assets/images/post8.jpg" class="object-cover w-48" alt="post8.jpg">
+            <img src="./../assets/icons/triangle.svg" alt="triangle" class="left-2 top-1 absolute">
+            <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+              +4 items
+            </p>
+          </a>
+          <a href="./post-detail.html" class="flex relative">
+            <img src="./../assets/images/product7.webp" class="object-cover w-48" alt="product7.webp">
+            <img src="./../assets/icons/triangle.svg" alt="triangle" class="left-2 top-1 absolute">
+            <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+              +4 items
+            </p>
+          </a>
+          <a href="./post-detail.html" class="flex relative">
+            <img src="./../assets/images/post7.jpg" class="object-cover w-48" alt="post7.jpg" />
+            <img src="./../assets/icons/triangle.svg" alt="triangle" class="left-2 top-1 absolute">
+            <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+              +4 items
+            </p>
+          </a>
+          <a href="./post-detail.html" class="flex relative">
+            <img src="./../assets/images/post5.jpg" class="object-cover w-48" alt="post5.jpg">
+            <img src="./../assets/icons/triangle.svg" alt="triangle" class="left-2 top-1 absolute">
+            <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+              +4 items
+            </p>
+          </a>
+          <a href="./post-detail.html" class="flex relative">
+            <img src="./../assets/images/post4.jpg" class="object-cover w-48" alt="post4.jpg">
+            <img src="./../assets/icons/triangle.svg" alt="triangle" class="left-2 top-1 absolute">
+            <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+              +4 items
+            </p>
+          </a>
+          <a href="./post-detail.html" class="flex relative">
+            <img src="./../assets/images/post6.jpg" class="object-cover w-48" alt="post6.jpg">
+            <img src="./../assets/icons/triangle.svg" alt="triangle" class="left-2 top-1 absolute">
+            <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+              +4 items
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <!-- ------------------ Closet Section ------------------ -->
+      <div id="Closet" class="tab-panel hidden">
+        <div class="grid gap-2 mt-4 px-5">
+          <div class="flex justify-end items-center pb-4">
+            <a href="" target="_blank" class="text- underline underline-offset-2">Select all</a>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+            <div class="flex flex-col relative">
+              <a href="" target="_blank" class="flex justify-center">
+                <img src="./../assets/images/product10.webp" class="object-cover h-64" alt="product10.webp" />
+              </a>
+              <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+              <a href="" target="_blank">
+                <sup>$</sup>
+                <span class="font-medium text-2xl">230</span>
+                <sup>99</sup>
+              </a>
+              <button class="border rounded-full py-2">See options</button>
+              <div class="absolute left-0 top-0 bg-white/30 backdrop-blur-xs w-full h-full text-center pt-16">
+                <p class="px-4">This item is visible only for Friends</p>
+                <a href="" target="_blank" class="underline">Request access</a>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <a href="" target="_blank" class="flex justify-center">
+                <img src="./../assets/images/product2.png" class="object-cover h-64" alt="product2.png" />
+              </a>
+              <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+              <a href="" target="_blank">
+                <sup>$</sup>
+                <span class="font-medium text-2xl">230</span>
+                <sup>99</sup>
+              </a>
+              <a class="bg-black text-white text-center rounded-full py-2" href="" target="_blank">Add to Cart</a>
+            </div>
+            <div class="flex flex-col">
+              <a href="" target="_blank" class="flex justify-center">
+                <img src="./../assets/images/product3.png" class="object-cover h-64" alt="product3.png" />
+              </a>
+              <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+              <a href="" target="_blank">
+                <sup>$</sup>
+                <span class="font-medium text-2xl">230</span>
+                <sup>99</sup>
+              </a>
+              <a class="bg-black text-white text-center rounded-full py-2" href="" target="_blank">Add to Cart</a>
+            </div>
+            <div class="flex flex-col">
+              <a href="" target="_blank" class="flex justify-center">
+                <img src="./../assets/images/product4.png" class="object-cover h-64" alt="product4.png" />
+              </a>
+              <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+              <a href="" target="_blank">
+                <sup>$</sup>
+                <span class="font-medium text-2xl">230</span>
+                <sup>99</sup>
+              </a>
+              <a class="border text-center rounded-full py-2" href="" target="_blank">See options</a>
+            </div>
+          </div>
+          <a class="border rounded-full py-2 text-center" href="" target="_blank">
+            <span>Add to cart</span>
+            <span class="text-brand-red">2 selected items</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav
+    class="fixed bottom-2 left-5 right-5 block md:hidden mx-auto bg-white/40 backdrop-blur-sm rounded-full py-2 z-20 shadow-lg shadow-black/10 max-w-[356px] cc-nav-bar"
+    style="box-shadow: -14px -14px 7px -12px rgba(179, 179, 179, 1) inset;">
+    <div class="flex items-center justify-center gap-x-6 w-full">
+      <a href="" target="_blank">
+        <img src="./../assets/icons/home.svg" alt="Home" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/search.svg" alt="Search" class="size-9 p-[5px]">
+      </a>
+      <a href="" target="_blank" class="bg-white rounded-full p-2 shadow-md">
+        <img src="./../assets/icons/add.svg" alt="Add" class="size-6">
+      </a>
+      <a href="#">
+        <img src="./../assets/icons/shopping-cart.svg" alt="Cart" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/user.svg" alt="Profile" class="size-9">
+      </a>
+    </div>
+  </nav>
+
+  <script src="./../assets/js/profile.js"></script>
+</body>
+
+</html>

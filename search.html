@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/global.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex justify-between bg-gray-200 max-w-[1400px] mx-auto my-0 cc-body-container">
+  <div class="bg-white w-full flex flex-col items-center md:max-w-[1400px] max-w-[600px]">
+    <div
+      class="max-w-[600px] bg-white w-full flex flex-col items-center justify-between p-5 gap-2 pb-24 h-full relative">
+      <p class="absolute top-4 left-auto right-auto font-medium text-xl">Search</p>
+
+      <div class="flex flex-col justify-evenly items-center flex-1">
+        <div class="text-center md:max-w-[600px] max-w-72 flex flex-col gap-4">
+          <p class="text-xl">What can you search for?</p>
+          <p class="text-sm font-light">Our AI-powered search supports multiple queries, so you can find exactly what
+            you're looking for.</p>
+          <div class="relative w-full">
+            <input type="text" placeholder="AI Search"
+              class="w-full pl-10 pr-4 py-2 bg-[#0E0D0D1A] rounded-full focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-brand-red transition"
+              id="search" />
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+              <img src="./../assets/icons/search.svg" alt="search">
+            </span>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <p class="text-xl mb-4">Examples of requests</p>
+          <div class="flex flex-wrap justify-center gap-1 font-light text-sm">
+            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2 cursor-pointer clickable">Posts about remote
+              jobs</span>
+            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2 cursor-pointer clickable">Events this
+              weekend</span>
+            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2 cursor-pointer clickable">Nike under $100</span>
+            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2 cursor-pointer clickable">UX designers in New
+              York</span>
+            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2 cursor-pointer clickable">Coffee shops near
+              me</span>
+            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2 cursor-pointer clickable">Events this
+              weekend</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav
+    class="fixed bottom-2 left-5 right-5 block md:hidden mx-auto bg-white/40 backdrop-blur-sm rounded-full py-2 z-20 shadow-lg shadow-black/10 max-w-[356px] cc-nav-bar"
+    style="box-shadow: -14px -14px 7px -12px rgba(179, 179, 179, 1) inset;">
+    <div class="flex items-center justify-center gap-x-6 w-full">
+      <a href="" target="_blank">
+        <img src="./../assets/icons/home.svg" alt="Home" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/search.svg" alt="Search" class="size-9 p-[5px]">
+      </a>
+      <a href="" target="_blank" class="bg-white rounded-full p-2 shadow-md">
+        <img src="./../assets/icons/add.svg" alt="Add" class="size-6">
+      </a>
+      <a href="#">
+        <img src="./../assets/icons/shopping-cart.svg" alt="Cart" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/user.svg" alt="Profile" class="size-9">
+      </a>
+    </div>
+  </nav>
+
+  <script src="./../assets/js/clickables.js"></script>
+</body>
+
+</html>

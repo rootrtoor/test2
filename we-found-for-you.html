@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/global.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex justify-between bg-gray-200 max-w-[1400px] mx-auto my-0 cc-body-container">
+  <div class="bg-white w-full flex flex-col items-center md:max-w-[1400px] max-w-[600px]">
+    <div class="max-w-[600px] bg-white w-full pb-24">
+      <div class="grid grid-cols-5 items-center p-5">
+        <div>
+          <a class="bg-gray-100 rounded-full size-7 flex items-center justify-center" href="" target="_blank">
+            <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
+          </a>
+        </div>
+        <div class="flex justify-center items-center gap-2 font-medium text-xl col-span-3">
+          We found for you
+        </div>
+        <div class="flex justify-end items-center">
+          <a class="bg-gray-100 rounded-full p-2" id="comments" href="" target="_blank">
+            <img src="./../assets/icons/link.svg" alt="link" class="size-5">
+          </a>
+        </div>
+      </div>
+
+      <!-- ------------------ Items in this Post Section ------------------ -->
+      <div class="grid gap-2 mt-8">
+        <div class="grid grid-cols-2 gap-2 px-5">
+          <div class="flex flex-col gap-2 relative justify-between">
+            <a href="" target="_blank" class="flex justify-center">
+              <img src="./../assets/images/product10.webp" class="object-cover h-64" alt="product10.webp">
+            </a>
+            <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+            <a href="" target="_blank">
+              <sup>$</sup>
+              <span class="font-medium text-2xl">230</span>
+              <sup>99</sup>
+            </a>
+            <a class="bg-black text-center text-white rounded-full py-2" href="" target="_blank">Add to Cart</a>
+          </div>
+          <div class="flex flex-col gap-2 relative justify-between">
+            <a href="" target="_blank" class="flex justify-center">
+              <img src="./../assets/images/product2.png" class="object-cover h-64" alt="product2.png">
+            </a>
+            <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+            <a href="" target="_blank">
+              <sup>$</sup>
+              <span class="font-medium text-2xl">230</span>
+              <sup>99</sup>
+            </a>
+            <div class="bg-[#FAFAFA66] rounded-full size-8 absolute right-2 top-2 flex items-center justify-center cursor-pointer eye-toggle" data-item-id="1">
+              <img src="./../assets/icons/eye.svg" alt="eye" class="eye-icon" />
+            </div>
+            <div class="flex items-center gap-2 py-2">
+              <img src="./../assets/icons/check-red.svg" alt="check-red" />
+              <span class="text-brand-red">Added to Closet</span>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 relative justify-between">
+            <a href="" target="_blank" class="flex justify-center">
+              <img src="./../assets/images/product3.png" class="object-cover h-64" alt="product3.png">
+            </a>
+            <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+            <a href="" target="_blank">
+              <sup>$</sup>
+              <span class="font-medium text-2xl">230</span>
+              <sup>99</sup>
+            </a>
+            <a class="bg-black text-center text-white rounded-full py-2" href="" target="_blank">Add to Cart</a>
+          </div>
+          <div class="flex flex-col gap-2 relative justify-between">
+            <a href="" target="_blank" class="flex justify-center">
+              <img src="./../assets/images/product4.png" class="object-cover h-64" alt="product4.png">
+            </a>
+            <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+            <div>
+              <sup>$</sup>
+              <span class="font-medium text-2xl">230</span>
+              <sup>99</sup>
+            </div>
+            <div class="bg-[#FAFAFA66] rounded-full size-8 absolute right-2 top-2 flex items-center justify-center cursor-pointer eye-toggle" data-item-id="2">
+              <img src="./../assets/icons/eye.svg" alt="eye" class="eye-icon" />
+            </div>
+            <div class="flex items-center gap-2 py-2">
+              <img src="./../assets/icons/check-red.svg" alt="check-red" />
+              <span class="text-brand-red">Added to Closet</span>
+            </div>
+          </div>
+          <button
+            class="py-2.5 col-span-2 rounded-full w-full bg-black text-white sticky bottom-4 cursor-pointer clickable">
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./../assets/js/we-found-for-you.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/global.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex justify-between bg-gray-200 max-w-[1400px] mx-auto my-0 cc-body-container">
+  <div class="bg-white w-full flex flex-col items-center md:max-w-[1400px] max-w-[600px]">
+    <div class="max-w-[600px] bg-white px-5 w-full pb-24">
+      <div class="grid grid-cols-3 items-center py-5">
+        <div>
+          <a class="bg-gray-100 rounded-full size-7 flex items-center justify-center" href="" target="_blank">
+            <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
+          </a>
+        </div>
+        <div class="flex justify-center items-center gap-2 font-medium text-xl text-nowrap">
+          Add closet items
+        </div>
+      </div>
+
+      <div class="relative w-full">
+        <input type="text" placeholder="Insert URL here"
+          class="w-full pl-10 pr-4 py-2 bg-[#0E0D0D1A] rounded-full focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-brand-red transition"
+          id="search" />
+        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+          <img src="./../assets/icons/search.svg" alt="search">
+        </span>
+      </div>
+
+      <div class="grid grid-cols-2 gap-x-2 gap-y-4 mt-4">
+        <div class="flex flex-col relative justify-between">
+          <a href="" target="_blank" class="flex justify-center">
+            <img src="./../assets/images/product10.webp" class="object-cover h-64" alt="product10.webp" />
+          </a>
+          <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+          <a href="" target="_blank">
+            <sup>$</sup>
+            <span class="font-medium text-2xl">230</span>
+            <sup>99</sup>
+          </a>
+          <a class="bg-black text-white rounded-full text-center py-2" href="" target="_blank">Add to Cart</a>
+        </div>
+        <div class="flex flex-col relative justify-between">
+          <a href="" target="_blank" class="flex justify-center">
+            <img src="./../assets/images/product2.png" class="object-cover h-64" alt="product2.png" />
+          </a>
+          <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+          <a href="" target="_blank">
+            <sup>$</sup>
+            <span class="font-medium text-2xl">230</span>
+            <sup>99</sup>
+          </a>
+          <button
+            class="rounded-full size-8 flex-none flex items-center justify-center bg-[#FAFAFA66] absolute right-1 top-1 item-visibility">
+            <img src="./../assets/icons/eye.svg" alt="eye" />
+          </button>
+          <a class="text-brand-red flex items-center gap-2 py-2" href="" target="_blank">
+            <img src="./../assets/icons/check-red.svg" alt="check" />
+            <span>Added to Closet</span>
+          </a>
+        </div>
+        <div class="flex flex-col relative justify-between">
+          <a href="" target="_blank" class="flex justify-center">
+            <img src="./../assets/images/product3.png" class="object-cover h-64" alt="product3.png" />
+          </a>
+          <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+          <a href="" target="_blank">
+            <sup>$</sup>
+            <span class="font-medium text-2xl">230</span>
+            <sup>99</sup>
+          </a>
+          <a class="bg-black text-white text-center rounded-full py-2" href="" target="_blank">Add to Cart</a>
+        </div>
+        <div class="flex flex-col relative justify-between">
+          <a href="" target="_blank" class="flex justify-center">
+            <img src="./../assets/images/product4.png" class="object-cover h-64" alt="product4.png" />
+          </a>
+          <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+          <a href="" target="_blank">
+            <sup>$</sup>
+            <span class="font-medium text-2xl">230</span>
+            <sup>99</sup>
+          </a>
+          <button
+            class="rounded-full size-8 flex-none flex items-center justify-center bg-[#FAFAFA66] absolute right-1 top-1 item-visibility">
+            <img src="./../assets/icons/eye-cross-red.svg" alt="eye-cross-red" />
+          </button>
+          <a class="text-brand-red flex items-center gap-2 py-2" href="" target="_blank">
+            <img src="./../assets/icons/check-red.svg" alt="check" />
+            <span>Added to Closet</span>
+          </a>
+        </div>
+      </div>
+      <div class="w-full flex flex-col">
+        <a class="bg-black text-white text-center rounded-full w-full py-2 mt-5" href="" target="_blank">Complete</a>
+        <a class="text-center mt-2 mb-8" href="" target="_blank">2 items Added to Closet</a>
+      </div>
+    </div>
+    <!-- ------------------ Edit Username Modal ------------------ -->
+    <div id="item-visibility-modal"
+      class="fixed inset-0 z-50 items-center justify-center bg-black/40 backdrop-blur-md hidden px-5">
+      <div class="grid bg-white rounded-2xl shadow-lg w-full max-w-md px-2 py-5 relative">
+        <button id="item-visibility-modal-btn" class="absolute top-6 right-3">
+          <img src="./../assets/icons/close.svg" alt="close">
+        </button>
+        <p class="text-lg mb-4 text-center">Choose your item visability</p>
+
+        <div id="modal-content" class="flex flex-col items-center w-full">
+          <button
+            class="bg-[#0E0D0DB2] py-2 mt-2 rounded-full flex items-center justify-center gap-2 text-white w-full">
+            <img src="./../assets/icons/eye-white.svg" alt="eye-white">
+            <span>Public</span>
+          </button>
+          <button
+            class="bg-[#0E0D0DB2] py-2 mt-2 rounded-full flex items-center justify-center gap-2 text-white w-full">
+            <img src="./../assets/icons/community.svg" alt="community">
+            <span>Community</span>
+          </button>
+          <button
+            class="bg-[#0E0D0DB2] py-2 mt-2 rounded-full flex items-center justify-center gap-2 text-white w-full">
+            <img src="./../assets/icons/friends.svg" alt="friends">
+            <span>Friends</span>
+          </button>
+          <button
+            class="bg-[#0E0D0DB2] py-2 mt-2 rounded-full flex items-center justify-center gap-2 text-white w-full">
+            <img src="./../assets/icons/eye-cross.svg" alt="eye-cross">
+            <span>Private (Only Me)</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav
+    class="fixed bottom-2 left-5 right-5 mx-auto block md:hidden bg-white/40 backdrop-blur-sm rounded-full py-2 z-20 shadow-lg shadow-black/10 max-w-[356px]"
+    style="box-shadow: -14px -14px 7px -12px rgba(179, 179, 179, 1) inset;">
+    <div class="flex items-center justify-center gap-x-6 w-full">
+      <a href="" target="_blank">
+        <img src="./../assets/icons/home.svg" alt="Home" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/search.svg" alt="Search" class="size-9 p-[5px]">
+      </a>
+      <a href="" target="_blank" class="bg-white rounded-full p-2 shadow-md">
+        <img src="./../assets/icons/add.svg" alt="Add" class="size-6">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/shopping-cart.svg" alt="Cart" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/user.svg" alt="Profile" class="size-9">
+      </a>
+    </div>
+  </nav>
+
+  <script>
+    /* ------------------ Visibility Modal ------------------ */
+    const itemVisibilityBtn = document.querySelectorAll('.item-visibility');
+    const modal = document.getElementById('item-visibility-modal');
+    const closeModalBtn = document.getElementById('item-visibility-modal-btn');
+
+    itemVisibilityBtn.forEach((item) => item.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }));
+
+    closeModalBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    });
+  </script>
+</body>
+
+</html>

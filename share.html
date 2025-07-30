@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/global.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex justify-between bg-gray-200 max-w-[1400px] mx-auto my-0 cc-body-container">
+  <div class="bg-white w-full flex flex-col items-center md:max-w-[1400px] max-w-[600px]">
+    <div class="max-w-[600px] bg-white w-full pb-24">
+      <div class="grid grid-cols-5 items-center p-5">
+        <div>
+          <a class="bg-gray-100 rounded-full size-7 flex items-center justify-center" href="" target="_blank">
+            <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
+          </a>
+        </div>
+        <div class="flex justify-center items-center gap-2 font-medium text-xl col-span-3">
+          Share with friends
+        </div>
+        <div class="flex justify-end items-center">
+          <a class="bg-gray-100 rounded-full p-2" id="comments" href="" target="_blank">
+            <img src="./../assets/icons/link.svg" alt="link" class="size-5">
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col px-5">
+        <p class="font-medium text-3xl text-center">Share your closet with people you know and love.</p>
+        <div class="relative w-full mt-8">
+          <input type="text" class="py-2.5 px-4 bg-[#0E0D0D1A] rounded-2xl w-full" id="share"
+            placeholder="copycart.com/addorders" />
+          <img src="./../assets/icons/copy-dark.svg" class="absolute right-2 top-2" alt="copy-dark" />
+        </div>
+        <p class="mt-5 font-medium text-[20px]">Share to contacts</p>
+        <div class="grid grid-cols-4 gap-x-3 gap-y-4">
+          <div class="flex flex-col items-center gap-2">
+            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none cursor-pointer clickable" />
+            <p>Greg</p>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none cursor-pointer clickable" />
+            <p>Greg</p>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none cursor-pointer clickable" />
+            <p>Greg</p>
+          </div>
+          <div class="flex flex-col items-center gap-2 relative">
+            <img src="./../assets/images/7.png" alt="7.png"
+              class="size-20 rounded-full flex-none border border-brand-red cursor-pointer clickable" />
+            <p>Greg</p>
+            <div
+              class="size-5 rounded-full flex-none flex items-center justify-center absolute right-[calc(50%-36px)] top-[60px] bg-brand-red">
+              <img src="./../assets/icons/check-white.svg" alt="check-white" />
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none cursor-pointer clickable" />
+            <p>Greg</p>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none cursor-pointer clickable" />
+            <p>Greg</p>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none cursor-pointer clickable" />
+            <p>Greg</p>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none cursor-pointer clickable" />
+            <p>Greg</p>
+          </div>
+        </div>
+        <button class="py-2.5 col-span-4 rounded-full w-full bg-black text-white sticky bottom-4 mt-4 cursor-pointer clickable">
+          Send
+        </button>
+        <button class="py-2.5 col-span-4 rounded-full w-full border sticky bottom-4 mt-4 cursor-pointer clickable">
+          Skip for now
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./../assets/js/clickables.js"></script>
+</body>
+
+</html>

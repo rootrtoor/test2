@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/global.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex justify-between bg-gray-200 max-w-[1400px] mx-auto my-0 cc-body-container">
+  <div class="bg-white w-full flex flex-col items-center md:max-w-[1400px] max-w-[600px]">
+  <div class="max-w-[600px] bg-white flex flex-col items-center px-5 gap-2 w-full pb-24">
+    <div class="grid grid-cols-3 items-center py-5 w-full">
+      <div>
+        <a class="bg-gray-100 rounded-full size-7 flex items-center justify-center" href="" target="_blank">
+          <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
+        </a>
+      </div>
+      <div class="flex justify-center items-center gap-2 font-medium text-xl text-nowrap">
+        Connect social media
+      </div>
+    </div>
+
+    <p class="text-3xl font-medium">Connect your account to add posts to your closet</p>
+
+    <div class="grid gap-2 w-full mt-6">
+      <div class="flex justify-between items-center border border-[#F6888E4D] rounded-full bg-[#FAFAFA] w-full p-4">
+        <div class="flex gap-2">
+          <img src="./../assets/icons/instagram.svg" alt="instagram" />
+          <span>Instagram account</span>
+        </div>
+        <input type="checkbox" id="instagram" class="rounded-full" />
+      </div>
+      <div class="flex justify-between items-center border border-[#F6888E4D] rounded-full bg-[#FAFAFA] w-full p-4">
+        <div class="flex gap-2">
+          <img src="./../assets/icons/tiktok.svg" alt="tiktok" />
+          <span>TikTok account</span>
+        </div>
+        <input type="checkbox" id="instagram" class="rounded-full" />
+      </div>
+      <div class="flex justify-between items-center border border-[#F6888E4D] rounded-full bg-[#FAFAFA] w-full p-4">
+        <div class="flex gap-2">
+          <img src="./../assets/icons/youtube.svg" alt="youtube" />
+          <span>Youtube account</span>
+        </div>
+        <input type="checkbox" id="instagram" class="rounded-full" />
+      </div>
+    </div>
+
+    <div class="absolute bottom-12 w-full max-w-150" id="social">
+      <button class="rounded-full bg-black text-white flex justify-center items-center w-full py-2 cursor-pointer">
+        Connect
+      </button>
+    </div>
+
+    <!-- ------------------ Connected Modal ------------------ -->
+    <div id="social-modal"
+      class="fixed inset-0 z-50 items-center justify-center bg-black/40 backdrop-blur-md hidden px-14">
+      <div class="grid bg-white rounded-4xl shadow-lg w-full max-w-md p-5 relative">
+        <div class="flex justify-center">
+          <div class="border border-[#F6888E4D] rounded-full size-[70px] flex justify-center items-center">
+            <img src="./../assets/icons/check-red.svg" class="size-9" alt="connected">
+          </div>
+        </div>
+        <p class="font-medium text-2xl text-center">Instagram connected</p>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="./../assets/js/social.js"></script>
+</body>
+
+</html>

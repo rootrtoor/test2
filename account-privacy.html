@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/global.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex justify-between bg-gray-200 max-w-[1400px] mx-auto my-0 cc-body-container">
+  <div class="bg-white w-full flex flex-col items-center md:max-w-[1400px] max-w-[600px]">
+    <div class="max-w-[600px] bg-white px-5 w-full pb-24">
+      <div class="grid grid-cols-3 items-center py-5">
+        <div>
+          <a class="bg-gray-100 rounded-full size-7 flex items-center justify-center" href="" target="_blank">
+            <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
+          </a>
+        </div>
+        <div class="flex justify-center items-center gap-2 font-medium text-xl text-nowrap">
+          Account Privacy
+        </div>
+      </div>
+
+      <!-- ------------------ Privacy account ------------------ -->
+      <div class="flex justify-between items-center my-3">
+        <p class="text-xl">Privacy account</p>
+        <button id="toggle-switch" class="cursor-pointer"
+          class="relative inline-flex h-5 w-10 items-center rounded-full bg-gray-300 transition-colors focus:outline-none mt-1">
+          <span id="switch-knob"
+            class="inline-block h-5 w-5 transform rounded-full bg-white shadow transition-transform"></span>
+        </button>
+      </div>
+
+      <p class="text-sm">Lorem ipsum dolor sit amet consectetur. Velit nam tempor vel ut nulla neque vitae fermentum.
+        Lectus
+        odio nullam
+        lobortis aliquet rhoncus in dignissim.</p>
+
+      <!-- ------------------ Account Section ------------------ -->
+      <div class="py-4 border-b">
+        <p class="text-xl">Privacy groups</p>
+      </div>
+      <a href="" target="_blank" class="py-4 border-b flex justify-between">
+        <p>Friends</p>
+        <img src="./../assets/icons/arrow-right.svg" alt="arrow-right">
+      </a>
+      <a href="" target="_blank" class="py-4 border-b flex justify-between">
+        <p>Communities</p>
+        <img src="./../assets/icons/arrow-right.svg" alt="arrow-right">
+      </a>
+    </div>
+  </div>
+
+  <nav
+    class="fixed bottom-2 left-5 right-5 block md:hidden mx-auto bg-white/40 backdrop-blur-sm rounded-full py-2 z-20 shadow-lg shadow-black/10 max-w-[356px] cc-nav-bar"
+    style="box-shadow: -14px -14px 7px -12px rgba(179, 179, 179, 1) inset;">
+    <div class="flex items-center justify-center gap-x-6 w-full">
+      <a href="" target="_blank">
+        <img src="./../assets/icons/home.svg" alt="Home" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/search.svg" alt="Search" class="size-9 p-[5px]">
+      </a>
+      <a href="" target="_blank" class="bg-white rounded-full p-2 shadow-md">
+        <img src="./../assets/icons/add.svg" alt="Add" class="size-6">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/shopping-cart.svg" alt="Cart" class="size-9">
+      </a>
+      <a href="" target="_blank">
+        <img src="./../assets/icons/user.svg" alt="Profile" class="size-9">
+      </a>
+    </div>
+  </nav>
+  <script>
+    /* ------------------ Toggle switch in Add Link modal ------------------ */
+    const toggleSwitch = document.getElementById('toggle-switch');
+    const switchKnob = document.getElementById('switch-knob');
+    let isOn = false;
+
+    toggleSwitch.addEventListener('click', () => {
+      isOn = !isOn;
+      if (isOn) {
+        toggleSwitch.classList.remove('bg-gray-300');
+        toggleSwitch.classList.add('bg-brand-red');
+        switchKnob.style.transform = 'translateX(1.25rem)';
+      } else {
+        toggleSwitch.classList.add('bg-gray-300');
+        toggleSwitch.classList.remove('bg-brand-red');
+        switchKnob.style.transform = 'translateX(0)';
+      }
+    });
+  </script>
+</body>
+
+</html>
